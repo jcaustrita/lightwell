@@ -1,0 +1,14 @@
+{
+	"modules": true,
+	"plugins": {
+		"postcss-preset-env": {
+			stage: 3
+		},
+		"postcss-modules": {
+			globalModulePaths: [
+				"index.css"
+			]
+		},
+		"autoprefixer": {}
+	}
+}

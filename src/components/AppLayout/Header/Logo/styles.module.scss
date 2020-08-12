@@ -1,0 +1,36 @@
+.lightwell,
+.survey {
+	animation-duration:1s;
+	animation-delay:1s;
+	animation-timing-function:ease-in-out;
+}
+
+.lightwell {
+	animation-name:slideInFromTop;
+}
+
+.survey {
+	animation-name:slideInFromBottom;
+}
+
+@keyframes slideInFromTop {
+	0% {
+		opacity:0;
+		transform: translateY(-100%);
+	}
+	100% {
+		opacity:1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		opacity:0;
+		transform: translateY(100%);
+	}
+	100% {
+		opacity:1;
+		transform: translateY(0);
+	}
+}

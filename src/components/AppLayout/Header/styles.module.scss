@@ -1,0 +1,40 @@
+$gutter: 28px;
+
+.appHeader {
+	display:flex; align-items:center; height:var(--headerHeight);
+	.cell {
+		display:flex; flex:1; padding:$gutter;
+		&:last-child {
+			justify-content:flex-end;
+		}
+	}
+}
+
+.logo {
+	display:block; width:154px; margin:0 auto;
+}
+
+.nav {
+	display:flex; margin:0; padding:0; list-style:none;
+}
+
+.navItem {
+
+}
+
+.navLink {
+	font-family:Gin; font-size:20px; line-height:1; padding:$gutter; position:relative; transition:all .5s ease-in-out;
+	&:hover {
+		color:var(--accent-color);
+	}
+	&.active {
+		color:#fff;
+		&:before {
+			position:absolute; top:50%; left:($gutter - 3px); right:($gutter - 3px); height:3px; content:''; background-color:var(--accent-color);
+		}
+	}
+}
+
+.socialLink {
+	padding:0 ($gutter / 2);
+}
