@@ -2,8 +2,6 @@ FROM node:12.16.3
 
 WORKDIR /home/node
 
-RUN npm install -g yarn
-
 COPY yarn.lock package.json ./
 
 RUN yarn install
