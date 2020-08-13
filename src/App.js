@@ -11,6 +11,7 @@ import VisitRoute from '@/routes/visit'
 import NotesRoute from '@/routes/notes'
 import NotesSlugRoute from '@/routes/notes/:slug'
 import ContactRoute from '@/routes/contact'
+import LegalRoute from '@/routes/legal'
 
 class App extends React.PureComponent {
 
@@ -36,6 +37,7 @@ class App extends React.PureComponent {
 								<Route path="/notes" element={<NotesRoute />} />
 								<Route path="/notes/:slug" element={<NotesSlugRoute />} />
 								<Route path="/contact" element={<ContactRoute />} />
+								<Route path="/legal" element={<LegalRoute />} />
 							</Routes>
 						</Grid.Cell>
 					</Grid>
