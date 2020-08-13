@@ -42,4 +42,13 @@ $gutter: 56px;
 
 .socialLink {
 	padding:0 ($gutter / 4);
+	svg {
+		fill:currentColor;
+	}
+	&:hover {
+		svg {
+			// todo: this is tmp
+			fill:var(--accent-color); cursor:pointer;
+		}
+	}
 }
