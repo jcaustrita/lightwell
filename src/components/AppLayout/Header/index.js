@@ -59,7 +59,7 @@ class Header extends React.PureComponent {
 							/>
 						</>
 					) : (
-						<Burger class={styles.burger} />
+						<Burger className={styles.burger} />
 					)}
 				</div>
 			</div>
