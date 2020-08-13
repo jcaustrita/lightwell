@@ -17,7 +17,7 @@ class Text extends React.PureComponent {
 						}
 					)
 				}
-				{...this.props}
+				{...props}
 			/>
 		)
 	}
