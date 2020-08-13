@@ -1,18 +1,18 @@
 $gutter: 56px;
 
 .appHeader {
-	--height: var(--headerHeight);
-	--cellPadding: calc($gutter / 2);
-	display:flex; align-items:center; height:var(--height);
+	--height: auto;
+	--cellPadding: 12px 20px;
+	display:flex; align-items:center; width:100%; height:var(--height);
 	.cell {
 		display:flex; flex:1; padding:var(--cellPadding);
 		&:last-child {
 			justify-content:flex-end;
 		}
 	}
-	:global(.screen-small) & {
-		--height: auto;
-		--cellPadding: 12px 20px;
+	:global(.screen-large) & {
+		--height: var(--headerHeight);
+		--cellPadding: calc($gutter / 2);
 	}
 }
 

@@ -21,7 +21,8 @@ class Cell extends React.PureComponent {
 class Content extends React.PureComponent {
 
 	static propTypes = {
-		vhFill: PropTypes.bool
+		bg: PropTypes.string,
+		pad: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 	}
 
 	get passThroughProps () {
@@ -32,14 +33,23 @@ class Content extends React.PureComponent {
 		return Classnames(
 			styles.content,
 			{
-				[styles.vhFill]: this.props.vhFill
-			}
+				[styles.bg]: !!this.props.bg
+			},
+			(this.props.pad) ? styles[`pad${this.props.pad}`] : null
 		)
+	}
+
+	get style () {
+		const style = {}
+		if(this.props.bg) {
+			style.backgroundImage = `url(${this.props.bg})`
+		}
+		return style
 	}
 
 	render () {
 		return (
-			<div className={this.classNames} {...this.passThroughProps} />
+			<div className={this.classNames} style={this.style} {...this.passThroughProps} />
 		)
 	}
 
@@ -53,14 +63,16 @@ class Grid extends React.PureComponent {
 
 	static propTypes = {
 		flex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-		stacked: PropTypes.bool
+		stacked: PropTypes.bool,
+		vhFill: PropTypes.bool
 	}
 
 	get classNames () {
 		return Classnames(
 			styles.grid,
 			{
-				[styles.stacked]: this.props.stacked
+				[styles.stacked]: this.props.stacked,
+				[styles.vhFill]: this.props.vhFill,
 			}
 		)
 	}
