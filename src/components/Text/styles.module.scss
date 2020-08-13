@@ -1,5 +1,8 @@
 .text {
 	max-width:70%; margin-left:auto; margin-right:auto;
+	:global(.screen-small) & {
+		max-width:85%;
+	}
 	h2 {
 		font-family:Gin;
 	}
