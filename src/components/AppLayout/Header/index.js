@@ -1,6 +1,8 @@
 import { React, PropTypes, Link, NavLink as BaseNavLink } from '@/vendor'
 import Logo from './Logo'
-import { SocialLinks } from '@/components'
+import Burger from './Burger'
+import SocialLinks from '@/components/SocialLinks'
+import Mq from '@/components/Mq'
 import styles from './styles.module.scss'
 
 class Navigation extends React.PureComponent {
@@ -28,14 +30,17 @@ function NavLink (props) {
 
 class Header extends React.PureComponent {
 	render () {
+		const fullLayout = this.props.mq.large
 		return (
 			<div className={styles.appHeader}>
 				<div className={styles.cell}>
-					<Navigation>
-						<NavLink to="/shop">Shop</NavLink>
-						<NavLink to="/about">About</NavLink>
-						<NavLink to="/visit">Visit</NavLink>
-					</Navigation>
+					{fullLayout && (
+						<Navigation>
+							<NavLink to="/shop">Shop</NavLink>
+							<NavLink to="/about">About</NavLink>
+							<NavLink to="/visit">Visit</NavLink>
+						</Navigation>
+					)}
 				</div>
 				<div className={styles.cell}>
 					<Link to="/" className={styles.logo}>
@@ -43,17 +48,23 @@ class Header extends React.PureComponent {
 					</Link>
 				</div>
 				<div className={styles.cell}>
-					<Navigation>
-						<NavLink to="/notes">Notes</NavLink>
-						<NavLink to="/contact">Contact</NavLink>
-					</Navigation>
-					<SocialLinks
-						liClassName={styles.socialLink}
-					/>
+					{fullLayout ? (
+						<>
+							<Navigation>
+								<NavLink to="/notes">Notes</NavLink>
+								<NavLink to="/contact">Contact</NavLink>
+							</Navigation>
+							<SocialLinks
+								liClassName={styles.socialLink}
+							/>
+						</>
+					) : (
+						<Burger class={styles.burger} />
+					)}
 				</div>
 			</div>
 		)
 	}
 }
 
-export default Header
+export default Mq.withMq(Header)

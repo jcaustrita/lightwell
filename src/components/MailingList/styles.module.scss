@@ -21,4 +21,13 @@
 	.submit {
 		margin-left:8px; background:#000; color:#fff; text-transform:uppercase; cursor:pointer;
 	}
+	:global(.screen-small) & {
+		display:block;
+		input {
+			display:block; width:100%;
+		}
+		.submit {
+			margin:8px 0 0;
+		}
+	}
 }

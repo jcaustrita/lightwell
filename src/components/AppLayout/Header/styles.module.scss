@@ -1,17 +1,30 @@
 $gutter: 56px;
 
 .appHeader {
-	display:flex; align-items:center; height:var(--headerHeight);
+	--height: var(--headerHeight);
+	--cellPadding: calc($gutter / 2);
+	display:flex; align-items:center; height:var(--height);
 	.cell {
-		display:flex; flex:1; padding:($gutter / 2);
+		display:flex; flex:1; padding:var(--cellPadding);
 		&:last-child {
 			justify-content:flex-end;
 		}
+	}
+	:global(.screen-small) & {
+		--height: auto;
+		--cellPadding: 12px 20px;
 	}
 }
 
 .logo {
 	display:block; width:154px; margin:0 auto;
+	:global(.screen-small) & {
+		width:112px;
+	}
+}
+
+.burger {
+	display:block; width:24px;
 }
 
 .nav {
