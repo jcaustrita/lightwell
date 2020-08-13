@@ -17,7 +17,7 @@ class App extends React.PureComponent {
 	render () {
 		return (
 			<BrowserRouter>
-				<Helmet titleTemplate="%s :: Example Site" />
+				<Helmet titleTemplate="%s :: Lightwell Survey Wines" />
 				<Grid.Container>
 					<Grid flex="0">
 						<Grid.Cell>

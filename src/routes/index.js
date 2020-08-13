@@ -7,8 +7,8 @@ class IndexRoute extends React.PureComponent {
 
 		return (
 			<>
-				<Helmet>
-					<title>Homepage</title>
+				<Helmet titleTemplate="">
+					<title>Lightwell Survey Wines :: Makin' Wine Straight Outta Virgina</title>
 				</Helmet>
 				<Grid>
 					<Grid.Cell>
