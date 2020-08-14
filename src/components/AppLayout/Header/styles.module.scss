@@ -3,6 +3,7 @@ $gutter: 56px;
 .appHeader {
 	--height: auto;
 	--cellPadding: 12px 20px;
+	--cellGutter: 56px;
 	display:flex; align-items:center; width:100%; height:var(--height);
 	.cell {
 		display:flex; flex:1; padding:var(--cellPadding);
@@ -12,7 +13,7 @@ $gutter: 56px;
 	}
 	:global(.screen-large) & {
 		--height: var(--headerHeight);
-		--cellPadding: calc($gutter / 2);
+		--cellPadding: calc(var(--cellGutter) / 2);
 	}
 }
 
@@ -32,7 +33,7 @@ $gutter: 56px;
 }
 
 .navItem {
-	margin:0 ($gutter / 2);
+	margin:0 calc(var(--cellGutter) / 2);
 }
 .navItem + .navItem {
 }
@@ -54,7 +55,7 @@ $gutter: 56px;
 }
 
 .socialLink {
-	padding:0 ($gutter / 4);
+	padding:0 calc(var(--cellGutter) / 4);
 	svg {
 		fill:currentColor;
 	}
