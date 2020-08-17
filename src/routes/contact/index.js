@@ -1,5 +1,5 @@
 import { React, PropTypes, Helmet, Link } from '@/vendor'
-import { Mq, Grid, Masthead, Text } from '@/components'
+import { Mq, Grid, MastheadSubpage, Masthead, Text } from '@/components'
 
 class ContactRoute extends React.PureComponent {
 
@@ -10,20 +10,16 @@ class ContactRoute extends React.PureComponent {
 				<Helmet>
 					<title>Contact</title>
 				</Helmet>
-				<Mq>
-					{(Mq) => (
-						<Grid vhFill={Mq.large}>
-							<Grid.Cell>
-								<Grid grow={false}>
-									<Grid.Cell>
-										<Grid.Content>
-											<Masthead
-												background={require('./contact.png')}
-												foreground={<h2>Get In Touch</h2>}
-											/>
-										</Grid.Content>
-									</Grid.Cell>
-								</Grid>
+				<MastheadSubpage
+					masthead={
+						<Masthead
+							background={require('./contact.png')}
+							foreground={<h2>Get In Touch</h2>}
+						/>
+					}
+					body={
+						<Mq>
+							{(Mq) => (
 								<Grid stacked={!Mq.large}>
 									<Grid.Cell>
 										<Grid.Content pad={2}>
@@ -62,10 +58,10 @@ class ContactRoute extends React.PureComponent {
 										</Grid.Content>
 									</Grid.Cell>
 								</Grid>
-							</Grid.Cell>
-						</Grid>
-					)}
-				</Mq>
+							)}
+						</Mq>
+					}
+				/>
 			</>
 		)
 
