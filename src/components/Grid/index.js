@@ -68,7 +68,8 @@ class Grid extends React.PureComponent {
 	static propTypes = {
 		flex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 		stacked: PropTypes.bool,
-		vhFill: PropTypes.bool
+		vhFill: PropTypes.bool,
+		grow: PropTypes.bool
 	}
 
 	get classNames () {
@@ -85,6 +86,9 @@ class Grid extends React.PureComponent {
 		const style = {}
 		if(this.props.flex) {
 			style.flex = this.props.flex
+		}
+		if(this.props.grow === false) {
+			style.flexGrow = 0
 		}
 		return style
 	}

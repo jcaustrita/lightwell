@@ -14,7 +14,7 @@ class ContactRoute extends React.PureComponent {
 					{(Mq) => (
 						<Grid vhFill={Mq.large}>
 							<Grid.Cell>
-								<Grid>
+								<Grid grow={false}>
 									<Grid.Cell>
 										<Grid.Content>
 											<Masthead
