@@ -12,7 +12,7 @@ class VisitRoute extends React.PureComponent {
 				</Helmet>
 				<Mq>
 					{(Mq) => (
-						<Grid vhFill={!Mq.small} stacked={Mq.small}>
+						<Grid vhFill={!Mq.small} stacked={!Mq.large}>
 							<Grid.Cell>
 								<Grid.Content pad={1}>
 									<Text center={true}>
