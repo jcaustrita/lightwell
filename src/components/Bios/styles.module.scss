@@ -1,0 +1,21 @@
+.bio {
+	img {
+		max-width:100%;
+	}
+}
+
+.role {
+	margin-top:.25em; opacity:.5;
+}
+
+:global(.screen-large) {
+	.bio {
+		margin:0 -4% !important; align-items:center;
+		& > * {
+			margin:0 4%;
+		}
+		img {
+			max-width:none;
+		}
+	}
+}

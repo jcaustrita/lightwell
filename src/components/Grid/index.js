@@ -12,10 +12,13 @@ class Container extends React.PureComponent {
 
 class Cell extends React.PureComponent {
 	render () {
-		const { className, ...props } = this.props
+		const { className, flex, ...props } = this.props
 		const classNames = Classnames(className, styles.cell)
+		const style = {
+			flex
+		}
 		return (
-			<div className={classNames} {...props} />
+			<div className={classNames} style={style} {...props} />
 		)
 	}
 }
@@ -69,22 +72,26 @@ class Grid extends React.PureComponent {
 		flex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 		stacked: PropTypes.bool,
 		vhFill: PropTypes.bool,
-		grow: PropTypes.bool
+		grow: PropTypes.bool,
+		reverse: PropTypes.bool,
+		className: PropTypes.string
 	}
 
 	get classNames () {
 		return Classnames(
 			styles.grid,
+			this.props.className,
 			{
 				[styles.stacked]: this.props.stacked,
 				[styles.vhFill]: this.props.vhFill,
+				[styles.reverse]: this.props.reverse
 			}
 		)
 	}
 
 	get style () {
 		const style = {}
-		if(this.props.flex) {
+		if(this.props.flex !== undefined) {
 			style.flex = this.props.flex
 		}
 		if(this.props.grow === false) {
