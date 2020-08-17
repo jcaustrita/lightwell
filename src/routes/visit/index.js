@@ -1,5 +1,5 @@
 import { React, PropTypes, Helmet } from '@/vendor'
-import { Mq, Grid, Text } from '@/components'
+import { Mq, Grid, Text, Gallery } from '@/components'
 
 class VisitRoute extends React.PureComponent {
 
@@ -30,7 +30,11 @@ class VisitRoute extends React.PureComponent {
 								</Grid.Content>
 							</Grid.Cell>
 							<Grid.Cell>
-								<Grid.Content bg={require('./img/tmp.jpg')} />
+								<Gallery>
+									<Gallery.Slide src={require('./img/tmp.jpg')} />
+									<Gallery.Slide src={require('./img/tmp.jpg')} />
+									<Gallery.Slide src={require('./img/tmp.jpg')} />
+								</Gallery>
 							</Grid.Cell>
 						</Grid>
 					)}
