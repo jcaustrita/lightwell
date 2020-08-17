@@ -39,11 +39,11 @@
 			height:300px;
 		}
 	}
-	&.pad1 {
-		padding:80px 0;
-		:global(.screen-small) & {
-			padding:30px 0;
-		}
+	&.pad1, &.pad2 {
+		padding:40px 8% 48px;
+	}
+	:global(.screen-large) &.pad2 {
+		padding-top:80px; padding-bottom:88px;
 	}
 }
 a.content:hover {

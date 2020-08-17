@@ -12,8 +12,10 @@ class Container extends React.PureComponent {
 
 class Cell extends React.PureComponent {
 	render () {
+		const { className, ...props } = this.props
+		const classNames = Classnames(className, styles.cell)
 		return (
-			<div className={styles.cell} {...this.props} />
+			<div className={classNames} {...props} />
 		)
 	}
 }
@@ -21,6 +23,7 @@ class Cell extends React.PureComponent {
 class Content extends React.PureComponent {
 
 	static propTypes = {
+		className: PropTypes.string,
 		bg: PropTypes.string,
 		pad: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 	}
@@ -32,6 +35,7 @@ class Content extends React.PureComponent {
 	get classNames () {
 		return Classnames(
 			styles.content,
+			this.props.className,
 			{
 				[styles.bg]: !!this.props.bg
 			},

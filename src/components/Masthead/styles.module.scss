@@ -1,8 +1,5 @@
 .masthead {
-	display:flex; align-items:center; justify-content:center; padding-top:2vw; position:relative;
-	:global(.screen-large) & {
-		padding-top:40px;
-	}
+	display:flex; align-items:center; justify-content:center; position:relative;
 }
 
 .background {

@@ -31,9 +31,7 @@ class App extends React.PureComponent {
 					<Grid.Container>
 						<Grid flex="0">
 							<Grid.Cell>
-								<Grid.Content>
-									<Header />
-								</Grid.Content>
+								<Header />
 							</Grid.Cell>
 						</Grid>
 						<Grid>
@@ -52,16 +50,12 @@ class App extends React.PureComponent {
 						</Grid>
 						<Grid flex="0">
 							<Grid.Cell>
-								<Grid.Content>
-									<Subscribe />
-								</Grid.Content>
+								<Subscribe />
 							</Grid.Cell>
 						</Grid>
 						<Grid flex="0">
 							<Grid.Cell>
-								<Grid.Content>
-									<Footer />
-								</Grid.Content>
+								<Footer />
 							</Grid.Cell>
 						</Grid>
 					</Grid.Container>

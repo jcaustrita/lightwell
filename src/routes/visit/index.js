@@ -14,7 +14,7 @@ class VisitRoute extends React.PureComponent {
 					{(Mq) => (
 						<Grid vhFill={!Mq.small} stacked={!Mq.large}>
 							<Grid.Cell>
-								<Grid.Content pad={1}>
+								<Grid.Content pad={2}>
 									<Text center={true}>
 										<h2>Schedule a Tasting</h2>
 										<p>Join us in Waynesboro, VA (the Old Mill) for a look into our signature approach to both winemaking and frienship.</p>

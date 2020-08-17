@@ -26,7 +26,7 @@ class ContactRoute extends React.PureComponent {
 								</Grid>
 								<Grid stacked={!Mq.large}>
 									<Grid.Cell>
-										<Grid.Content>
+										<Grid.Content pad={2}>
 											<Text center={true}>
 												<h2>Where to Buy</h2>
 												<p>
@@ -38,7 +38,7 @@ class ContactRoute extends React.PureComponent {
 										</Grid.Content>
 									</Grid.Cell>
 									<Grid.Cell>
-										<Grid.Content>
+										<Grid.Content pad={2}>
 											<Text center={true}>
 												<h2>Where to Buy</h2>
 												<p>
@@ -50,7 +50,7 @@ class ContactRoute extends React.PureComponent {
 										</Grid.Content>
 									</Grid.Cell>
 									<Grid.Cell>
-										<Grid.Content>
+										<Grid.Content pad={2}>
 											<Text center={true}>
 												<h2>Support</h2>
 												<p>
