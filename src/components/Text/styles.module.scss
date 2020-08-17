@@ -1,6 +1,14 @@
 .text {
 	h2 {
-		font-family:Gin;
+		font-family:Gin; margin:0;
+	}
+	p {
+		&:first-child {
+			margin:0;
+		}
+		&:last-child {
+			margin:0;
+		}
 	}
 	a {
 		display:inline-block; position:relative;
