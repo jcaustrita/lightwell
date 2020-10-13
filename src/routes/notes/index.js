@@ -1,5 +1,7 @@
 import { React, PropTypes, Helmet } from '@/vendor'
-import { Grid } from '@/components'
+import { Grid, MastheadSubpage, Masthead } from '@/components'
+import StuffWeWrote from './StuffWeWrote'
+import styles from './styles.module.scss'
 
 class NotesRoute extends React.PureComponent {
 
@@ -10,13 +12,26 @@ class NotesRoute extends React.PureComponent {
 				<Helmet>
 					<title>Notes</title>
 				</Helmet>
-				<Grid>
-					<Grid.Cell>
-						<Grid.Content>
-							Notes....
-						</Grid.Content>
-					</Grid.Cell>
-				</Grid>
+				<MastheadSubpage
+					masthead={
+						<Masthead
+							background={require('./notes.png')}
+							foreground={
+								<StuffWeWrote className={styles.stuffText} />
+							}
+						/>
+					}
+					body={
+						<Grid>
+							<Grid.Cell>
+								<Grid.Content pad={2}>
+									Notes here...
+								</Grid.Content>
+							</Grid.Cell>
+						</Grid>
+
+					}
+				/>
 			</>
 		)
 
