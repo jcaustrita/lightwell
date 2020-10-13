@@ -1,4 +1,5 @@
 import { React, PropTypes } from '@/vendor'
+import { Img } from '@/components'
 import styles from './styles.module.scss'
 
 class ForegroundDefault extends React.PureComponent {
@@ -16,9 +17,9 @@ class ForegroundDefault extends React.PureComponent {
 			<>
 				<h2>{this.props.headline}</h2>
 				{this.props.callout && (
-					<div class={styles.callout}>
+					<div className={styles.callout}>
 						{this.props.callout.image && (
-							<img src={this.props.callout.image} />
+							<Img src={this.props.callout.image} />
 						)}
 						{this.props.callout.text}
 					</div>
