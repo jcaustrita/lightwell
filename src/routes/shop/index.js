@@ -14,7 +14,15 @@ class ShopRoute extends React.PureComponent {
 					masthead={
 						<Masthead
 							background={require('./shop.png')}
-							foreground={<h2>Free Ground Shipping</h2>}
+							foreground={
+								<Masthead.Foreground.Default
+									headline="Free Ground Shipping"
+									callout={{
+										image: require('./note@2x.png'),
+										text: '3 bottle minimum'
+									}}
+								/>
+							}
 						/>
 					}
 					body={
