@@ -1,5 +1,5 @@
 import { React, PropTypes, Helmet } from '@/vendor'
-import { Grid, VinoFrame } from '@/components'
+import { Grid, MastheadSubpage, Masthead, VinoFrame } from '@/components'
 
 class ShopRoute extends React.PureComponent {
 
@@ -10,13 +10,24 @@ class ShopRoute extends React.PureComponent {
 				<Helmet>
 					<title>Shop</title>
 				</Helmet>
-				<Grid>
-					<Grid.Cell>
-						<Grid.Content>
-							<VinoFrame />
-						</Grid.Content>
-					</Grid.Cell>
-				</Grid>
+				<MastheadSubpage
+					masthead={
+						<Masthead
+							background={require('./shop.png')}
+							foreground={<h2>Free Ground Shipping</h2>}
+						/>
+					}
+					body={
+						<Grid>
+							<Grid.Cell>
+								<Grid.Content pad={2}>
+									<VinoFrame />
+								</Grid.Content>
+							</Grid.Cell>
+						</Grid>
+
+					}
+				/>
 			</>
 		)
 
