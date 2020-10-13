@@ -12,8 +12,8 @@ class IndexRoute extends React.PureComponent {
 				</Helmet>
 				<Grid>
 					<Grid.Cell>
-						<Grid.Content vhFill={true}>
-							this will fill to bottom of viewport
+						<Grid.Content>
+							homepage...
 						</Grid.Content>
 					</Grid.Cell>
 				</Grid>
