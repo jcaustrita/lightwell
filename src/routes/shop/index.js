@@ -1,5 +1,5 @@
 import { React, PropTypes, Helmet } from '@/vendor'
-import { Grid } from '@/components'
+import { Grid, VinoFrame } from '@/components'
 
 class ShopRoute extends React.PureComponent {
 
@@ -13,7 +13,7 @@ class ShopRoute extends React.PureComponent {
 				<Grid>
 					<Grid.Cell>
 						<Grid.Content>
-							Shop....
+							<VinoFrame />
 						</Grid.Content>
 					</Grid.Cell>
 				</Grid>
