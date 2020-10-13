@@ -7,8 +7,14 @@
 }
 
 .foreground {
-	position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
+	position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center;
 	h2 {
 		font-family:Gin;
+	}
+	.callout {
+		display:flex; justify-content:center; align-items:center; line-height:1; white-space:nowrap;
+		img {
+			display:block; max-height:42px; width:auto; margin-right:8px;
+		}
 	}
 }
