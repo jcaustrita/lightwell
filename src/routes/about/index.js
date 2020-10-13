@@ -16,7 +16,11 @@ class AboutRoute extends React.PureComponent {
 					masthead={
 						<Masthead
 							background={require('./about.png')}
-							foreground={<h2>Get In Touch</h2>}
+							foreground={
+								<Masthead.Foreground.Default
+									headline="Our Story"
+								/>
+							}
 						/>
 					}
 					body={

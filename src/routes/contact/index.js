@@ -14,7 +14,11 @@ class ContactRoute extends React.PureComponent {
 					masthead={
 						<Masthead
 							background={require('./contact.png')}
-							foreground={<h2>Get In Touch</h2>}
+							foreground={
+								<Masthead.Foreground.Default
+									headline="Get In Touch"
+								/>
+							}
 						/>
 					}
 					body={
