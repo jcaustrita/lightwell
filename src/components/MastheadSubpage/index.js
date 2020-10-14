@@ -1,5 +1,5 @@
 import { React, PropTypes } from '@/vendor'
-import { Mq, Grid } from '@/components'
+import { Grid } from '@/components'
 
 class MastheadSubpage extends React.PureComponent {
 
@@ -11,22 +11,16 @@ class MastheadSubpage extends React.PureComponent {
 	render () {
 
 		return (
-			<Mq>
-				{(Mq) => (
-					<Grid vhFill={Mq.large}>
-						<Grid.Cell>
-							<Grid grow={false}>
-								<Grid.Cell>
-									<Grid.Content>
-										{this.props.masthead}
-									</Grid.Content>
-								</Grid.Cell>
-							</Grid>
-							{this.props.body}
-						</Grid.Cell>
-					</Grid>
-				)}
-			</Mq>
+			<>
+				<Grid block={true}>
+					<Grid.Cell>
+						<Grid.Content>
+							{this.props.masthead}
+						</Grid.Content>
+					</Grid.Cell>
+				</Grid>
+				{this.props.body}
+			</>
 		)
 
 	}
