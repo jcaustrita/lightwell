@@ -15,7 +15,10 @@ class NotesRoute extends React.PureComponent {
 				<MastheadSubpage
 					masthead={
 						<Masthead
-							background={require('./notes.png')}
+							background={{
+								image: require('./notes.png'),
+								title: 'Notes'
+							}}
 							foreground={
 								<StuffWeWrote className={styles.stuffText} />
 							}

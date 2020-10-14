@@ -15,7 +15,10 @@ class AboutRoute extends React.PureComponent {
 				<MastheadSubpage
 					masthead={
 						<Masthead
-							background={require('./about.png')}
+							background={{
+								image: require('./about.png'),
+								title: 'About'
+							}}
 							foreground={
 								<Masthead.Foreground.Default
 									headline="Our Story"

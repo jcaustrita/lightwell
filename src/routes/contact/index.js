@@ -13,7 +13,10 @@ class ContactRoute extends React.PureComponent {
 				<MastheadSubpage
 					masthead={
 						<Masthead
-							background={require('./contact.png')}
+							background={{
+								image: require('./contact.png'),
+								title: 'Contact'
+							}}
 							foreground={
 								<Masthead.Foreground.Default
 									headline="Get In Touch"

@@ -13,7 +13,10 @@ class ShopRoute extends React.PureComponent {
 				<MastheadSubpage
 					masthead={
 						<Masthead
-							background={require('./shop.png')}
+							background={{
+								image: require('./shop.png'),
+								title: 'Shop'
+							}}
 							foreground={
 								<Masthead.Foreground.Default
 									headline="Free Ground Shipping"

@@ -36,14 +36,17 @@ class Masthead extends React.PureComponent {
 	}
 
 	static propTypes = {
-		background: PropTypes.string,
+		background: PropTypes.shape({
+			image: PropTypes.string,
+			title: PropTypes.string
+		}),
 		foreground: PropTypes.element
 	}
 
 	render () {
 		return (
 			<div className={styles.masthead}>
-				<img src={this.props.background} className={styles.background} />
+				<img src={this.props.background.image} className={styles.background} alt={this.props.background.title} />
 				<div className={styles.foreground}>
 					{this.props.foreground}
 				</div>
