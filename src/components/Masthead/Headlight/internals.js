@@ -30,5 +30,5 @@ export function calcElementTextShadow (el, mouseX, mouseY) {
 	const clampedOffsetY = clamp(offsetY, minMouseY, maxMouseY);
 	const remappedOffsetX = Math.trunc(map(clampedOffsetX, minMouseX, maxMouseX, minShadowX, maxShadowX));
 	const remappedOffsetY = Math.trunc(map(clampedOffsetY, minMouseY, maxMouseY, minShadowY, maxShadowY));
-	return `${remappedOffsetX * -1}px ${remappedOffsetY * -1}px 50px #0F0F0F`
+	return `${remappedOffsetX * -1}px ${remappedOffsetY * -1}px 30px rgba(15, 15, 15, 0.35)`
 }
