@@ -4,14 +4,12 @@ class VinoFrame extends React.PureComponent {
 
 	componentDidMount () {
 		const { vsWineList } = window
-		if(vsWineList?.initialized()) {
-			vsWineList.init("vs-winelist", 1)
-		}
+		vsWineList.init(this.$el.id, true)
 	}
 
 	render () {
 		return (
-			<div id="vs-winelist" style={{width: '100%'}}></div>
+			<div id="winelist" style={{width: '100%'}} ref={(el) => { this.$el = el }} />
 		)
 	}
 }
