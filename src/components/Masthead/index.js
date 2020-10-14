@@ -1,5 +1,6 @@
 import { React, PropTypes } from '@/vendor'
-import { Img } from '@/components'
+import { Mq, Img } from '@/components'
+import Headlight from './Headlight'
 import styles from './styles.module.scss'
 
 class ForegroundDefault extends React.PureComponent {
@@ -45,12 +46,20 @@ class Masthead extends React.PureComponent {
 
 	render () {
 		return (
-			<div className={styles.masthead}>
-				<img src={this.props.background.image} className={styles.background} alt={this.props.background.title} />
-				<div className={styles.foreground}>
-					{this.props.foreground}
-				</div>
-			</div>
+			<Mq>
+				{(Mq) => (
+					<div className={styles.masthead}>
+						{Mq.large ? (
+							<Headlight text={this.props.background.title} className={styles.headlight} />
+						) : (
+							<img src={this.props.background.image} className={styles.background} alt={this.props.background.title} />
+						)}
+						<div className={styles.foreground}>
+							{this.props.foreground}
+						</div>
+					</div>
+				)}
+			</Mq>
 		)
 	}
 
