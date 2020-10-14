@@ -19,7 +19,7 @@ class App extends React.PureComponent {
 		return {
 			small: 'screen and (max-width: 767px)',
 			medium: 'screen and (min-width: 768px) and (max-width: 999px)',
-			large: 'screen and (min-width: 1000px)'
+			large: 'screen and (min-width: 1180px)'
 		}
 	}
 
