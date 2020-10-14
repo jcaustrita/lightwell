@@ -1,5 +1,6 @@
 import { React, PropTypes, Helmet } from '@/vendor'
 import { Mq, Grid, Text, Gallery } from '@/components'
+import * as gallery from './gallery/*.jpg'
 
 class VisitRoute extends React.PureComponent {
 
@@ -12,7 +13,7 @@ class VisitRoute extends React.PureComponent {
 				</Helmet>
 				<Mq>
 					{(Mq) => (
-						<Grid vhFill={!Mq.small} stacked={!Mq.large}>
+						<Grid stacked={!Mq.large}>
 							<Grid.Cell>
 								<Grid.Content pad={2}>
 									<Text center={true}>
@@ -31,9 +32,9 @@ class VisitRoute extends React.PureComponent {
 							</Grid.Cell>
 							<Grid.Cell>
 								<Gallery>
-									<Gallery.Slide src={require('./img/tmp.jpg')} />
-									<Gallery.Slide src={require('./img/tmp.jpg')} />
-									<Gallery.Slide src={require('./img/tmp.jpg')} />
+									{Object.values(gallery).map((src) => (
+										<Gallery.Slide src={src} key={src} />
+									))}
 								</Gallery>
 							</Grid.Cell>
 						</Grid>
