@@ -1,3 +1,17 @@
+$screen-min: 600px;
+$screen-max: 1180px;
+$screen-diff: ($screen-max / 1px - $screen-min / 1px);
+
+@mixin responsiveFontSize($font-min, $font-max) {
+	font-size: $font-min;
+	@media (min-width: $screen-min) and (max-width: $screen-max) {
+		font-size: calc(#{$font-min} + (100vw - #{$screen-min}) / #{$screen-diff} * #{($font-max / 1px - $font-min / 1px)});
+	}
+	@media (min-width: #{$screen-max + 1}) {
+		font-size: $font-max;
+	}
+}
+
 @mixin gin () {
 	font-family:'gin'
 }
@@ -32,12 +46,12 @@
 
 .h1 {
 	@include headline;
-	font-size:40px;
+	@include responsiveFontSize(24px, 40px);
 }
 
 .h2 {
 	@include headline;
-	font-size:32px;
+	@include responsiveFontSize(24px, 32px);
 }
 
 .h3 {
