@@ -2,7 +2,7 @@ import { React } from '@/vendor'
 
 export default {
 	title: '2017 Hintermen',
-	date: '2017-01-01',
+	date: '2017-01-02',
 	image: require('./2017-hintermen@2x.jpg'),
 	body: (
 		<>

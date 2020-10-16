@@ -2,7 +2,7 @@ import { React } from '@/vendor'
 
 export default {
 	title: '2017 Los Idiots',
-	date: '2017-01-02',
+	date: '2017-01-01',
 	image: require('./2017-los-idiots@2x.jpg'),
 	body: (
 		<>

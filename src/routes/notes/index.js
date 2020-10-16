@@ -12,7 +12,7 @@ const content = (() => {
 			date: new Date(date)
 		}
 	})
-	return mapped.sort((a, b) => a.date - b.date)
+	return mapped.sort((a, b) => b.date - a.date)
 })()
 
 class NotesRoute extends React.PureComponent {
