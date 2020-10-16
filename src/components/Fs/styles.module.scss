@@ -1,0 +1,65 @@
+@mixin gin () {
+	font-family:'gin'
+}
+
+@mixin headline () {
+	@include gin;
+	line-height:1.2;
+}
+
+.fs {
+	p {
+		&:first-child {
+			margin-top:0;
+		}
+		&:last-child {
+			margin-bottom:0;
+		}
+	}
+	a {
+		display:inline-block; position:relative;
+		&:before {
+			position:absolute; top:calc(100% - 2px); left:0; width:100%; content:''; height:1px; background:currentColor; transition:all .15s ease-in-out; pointer-events:none;
+		}
+		&:hover {
+			&:before {
+				width:0;
+			}
+		}
+	}
+}
+
+.h1 {
+	@include headline;
+	font-size:40px;
+}
+
+.h2 {
+	@include headline;
+	font-size:32px;
+}
+
+.h3 {
+	@include headline;
+	font-size:20px;
+}
+
+.left {
+	text-align:left;
+}
+
+.center {
+	text-align:center;
+}
+
+.right {
+	text-align:right;
+}
+
+.justify {
+	text-align:justify;
+}
+
+.noWrap {
+	line-height:1; white-space:nowrap;
+}
