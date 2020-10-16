@@ -1,11 +1,7 @@
-# Ropers WWW React
+# Lightwell Survey
 
-## For the UI App
-```
-docker-compose up ui
-```
-or
+## Getting Started
 ```
 yarn install (first time)
-yarn start
+yarn serve
 ```
