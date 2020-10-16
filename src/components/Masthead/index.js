@@ -1,5 +1,5 @@
 import { React, PropTypes } from '@/vendor'
-import { Mq, Img } from '@/components'
+import { Mq, Img, Fs } from '@/components'
 import Headlight from './Headlight'
 import styles from './styles.module.scss'
 
@@ -16,7 +16,7 @@ class ForegroundDefault extends React.PureComponent {
 	render () {
 		return (
 			<>
-				<h2>{this.props.headline}</h2>
+				<Fs variant="h1" tag="h1">{this.props.headline}</Fs>
 				{this.props.callout && (
 					<div className={styles.callout}>
 						{this.props.callout.image && (

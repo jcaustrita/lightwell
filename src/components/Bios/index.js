@@ -1,5 +1,5 @@
 import { React, PropTypes } from '@/vendor'
-import { Mq, Grid, Text } from '@/components'
+import { Mq, Grid, Fs } from '@/components'
 import styles from './styles.module.scss'
 
 class Bio extends React.PureComponent {
@@ -13,11 +13,11 @@ class Bio extends React.PureComponent {
 							{headshot}
 						</Grid.Cell>
 						<Grid.Cell>
-							<Text>
-								<h2>{name}</h2>
+							<Fs>
+								<Fs variant="h2" tag="h2">{name}</Fs>
 								<p className={styles.role}>{role}</p>
 								{body}
-							</Text>
+							</Fs>
 						</Grid.Cell>
 					</Grid>
 				</Grid.Content>

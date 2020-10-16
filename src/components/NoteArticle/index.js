@@ -1,5 +1,5 @@
 import { React, PropTypes } from '@/vendor'
-import { Img } from '@/components'
+import { Img, Fs } from '@/components'
 import styles from './styles.module.scss'
 
 class NoteArticle extends React.PureComponent {
@@ -18,7 +18,7 @@ class NoteArticle extends React.PureComponent {
 					className={styles.image}
 				/>
 				<div className={styles.body}>
-					<h1 className={styles.title}>{this.props.title}</h1>
+					<Fs variant="h1" tag="h1" align="center">{this.props.title}</Fs>
 					{this.props.body}
 				</div>
 			</div>

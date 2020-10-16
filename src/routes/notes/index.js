@@ -1,5 +1,5 @@
 import { React, PropTypes, Helmet, NavLink } from '@/vendor'
-import { Grid, MastheadSubpage, Masthead } from '@/components'
+import { Grid, MastheadSubpage, Masthead, Fs } from '@/components'
 import StuffWeWrote from './StuffWeWrote'
 import styles from './styles.module.scss'
 
@@ -45,7 +45,9 @@ class NotesRoute extends React.PureComponent {
 										tag={NavLink}
 										pad={1}
 										to={`./${item.slug}`}
-										children={item.title}
+										children={
+											<Fs variant="h1" tag="h2" align="center">{item.title}</Fs>
+										}
 									/>
 								</Grid.Cell>
 							))}

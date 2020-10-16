@@ -1,5 +1,5 @@
 import { React } from '@/vendor'
-import { Text } from '@/components'
+import { Fs } from '@/components'
 import Graphic from './Graphic'
 import styles from './styles.module.scss'
 
@@ -21,9 +21,9 @@ class MailingList extends React.PureComponent {
 		return (
 			<div className={styles.mailingList}>
 				<Graphic className={styles.graphic} />
-				<Text className={styles.blurb}>
+				<div className={styles.blurb}>
 					Get notified on upcoming wine releases and other news.
-				</Text>
+				</div>
 				<form action={MAILCHIMP_FORM_URL} className={styles.form} onSubmit={this.submit} method="post" target="_blank">
 					<input
 						type="email"

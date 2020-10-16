@@ -1,5 +1,5 @@
 import { React, PropTypes, Helmet } from '@/vendor'
-import { Mq, Grid, Text, Gallery } from '@/components'
+import { Mq, Grid, Gallery, Fs } from '@/components'
 import * as gallery from './gallery/*.jpg'
 
 class VisitRoute extends React.PureComponent {
@@ -16,8 +16,8 @@ class VisitRoute extends React.PureComponent {
 						<Grid stacked={!Mq.large}>
 							<Grid.Cell>
 								<Grid.Content pad={2}>
-									<Text center={true}>
-										<h2>Schedule a Tasting</h2>
+									<Fs align="center">
+										<Fs variant="h2" tag="h2">Schedule a Tasting</Fs>
 										<p>Join us in Waynesboro, VA (the Old Mill) for a look into our signature approach to both winemaking and frienship.</p>
 										<p>For all requests, please schedule your tasting by calling 123-456-7890. We are currently taking groups up to 6, this includes non-tasters.</p>
 										<p>
@@ -27,7 +27,7 @@ class VisitRoute extends React.PureComponent {
 										<p>
 											<a href="mailto:wines@lightwellsurvey.com">wines@lightwellsurvey.com</a>
 										</p>
-									</Text>
+									</Fs>
 								</Grid.Content>
 							</Grid.Cell>
 							<Grid.Cell>
