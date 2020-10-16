@@ -25,10 +25,15 @@ class Cell extends React.PureComponent {
 
 class Content extends React.PureComponent {
 
+	static defaultProps = {
+		tag: 'div'
+	}
+
 	static propTypes = {
 		className: PropTypes.string,
 		bg: PropTypes.string,
-		pad: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+		pad: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+		tag: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 	}
 
 	get passThroughProps () {
@@ -56,7 +61,7 @@ class Content extends React.PureComponent {
 
 	render () {
 		return (
-			<div className={this.classNames} style={this.style} {...this.passThroughProps} />
+			<this.props.tag className={this.classNames} style={this.style} {...this.passThroughProps} />
 		)
 	}
 
