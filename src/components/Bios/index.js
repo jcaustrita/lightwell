@@ -15,7 +15,7 @@ class Bio extends React.PureComponent {
 						<Grid.Cell>
 							<Fs>
 								<Fs variant="h2" tag="h2">{name}</Fs>
-								<p className={styles.role}>{role}</p>
+								<Fs variant="meta" tag="p" className={styles.role}>{role}</Fs>
 								{body}
 							</Fs>
 						</Grid.Cell>
