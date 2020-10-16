@@ -1,19 +1,24 @@
 import { React, PropTypes, Helmet } from '@/vendor'
-import { Grid } from '@/components'
+import { NoteArticle, Grid, Redirect } from '@/components'
+const content = require('./content/**/index.js')
+import { useParams } from 'react-router-dom'
 
 class NotesSlugRoute extends React.PureComponent {
 
-	render () {
+	static propTypes = {
+		title: PropTypes.string
+	}
 
+	render () {
 		return (
 			<>
 				<Helmet>
-					<title>Notes Slug</title>
+					<title>{this.props.title}</title>
 				</Helmet>
 				<Grid>
 					<Grid.Cell>
-						<Grid.Content>
-							Notes Slug....
+						<Grid.Content pad={1}>
+							<NoteArticle {...this.props} />
 						</Grid.Content>
 					</Grid.Cell>
 				</Grid>
@@ -24,4 +29,11 @@ class NotesSlugRoute extends React.PureComponent {
 
 }
 
-export default NotesSlugRoute
+export default () => {
+	const params = useParams()
+	const matched = content[params.slug]?.default
+	if(matched) {
+		return <NotesSlugRoute {...matched} />
+	}
+	return <Redirect to=".." />
+}
