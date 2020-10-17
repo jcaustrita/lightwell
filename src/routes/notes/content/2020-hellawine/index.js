@@ -2,7 +2,7 @@ import { React } from '@/vendor'
 
 export default {
 	title: '2020 Hellawine',
-	date: '2020-01-02',
+	date: '2020-10-01',
 	image: require('./2020-hellawine@2x.jpg'),
 	body: (
 		<>
