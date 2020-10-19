@@ -16,7 +16,7 @@ class ForegroundDefault extends React.PureComponent {
 	render () {
 		return (
 			<>
-				<Fs variant="h1" tag="h1">{this.props.headline}</Fs>
+				<Fs variant="h1" tag="h1" noWrap>{this.props.headline}</Fs>
 				{this.props.callout && (
 					<div className={styles.callout}>
 						{this.props.callout.image && (
