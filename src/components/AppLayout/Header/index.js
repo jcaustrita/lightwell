@@ -29,42 +29,52 @@ function NavLink (props) {
 }
 
 class Header extends React.PureComponent {
+	static propTypes = {
+		burger: PropTypes.element
+	}
+	static Burger = Burger
 	render () {
-		const fullLayout = this.props.mq.large
 		return (
-			<div className={styles.appHeader}>
-				<div className={styles.cell}>
-					{fullLayout && (
-						<Navigation>
-							<NavLink to="/shop">Shop</NavLink>
-							<NavLink to="/about">About</NavLink>
-							<NavLink to="/visit">Visit</NavLink>
-						</Navigation>
-					)}
-				</div>
-				<div className={styles.cell}>
-					<Link to="/" className={styles.logo}>
-						<Logo className={styles.logo} />
-					</Link>
-				</div>
-				<div className={styles.cell}>
-					{fullLayout ? (
-						<>
-							<Navigation>
-								<NavLink to="/notes">Notes</NavLink>
-								<NavLink to="/contact">Contact</NavLink>
-							</Navigation>
-							<SocialLinks
-								liClassName={styles.socialLink}
-							/>
-						</>
-					) : (
-						<Burger className={styles.burger} />
-					)}
-				</div>
-			</div>
+			<Mq>
+				{(Mq) => {
+					const fullLayout = Mq.large
+					return (
+						<div className={styles.appHeader}>
+							<div className={styles.cell}>
+								{fullLayout && (
+									<Navigation>
+										<NavLink to="/shop">Shop</NavLink>
+										<NavLink to="/about">About</NavLink>
+										<NavLink to="/visit">Visit</NavLink>
+									</Navigation>
+								)}
+							</div>
+							<div className={styles.cell}>
+								<Link to="/" className={styles.logo}>
+									<Logo className={styles.logo} />
+								</Link>
+							</div>
+							<div className={styles.cell}>
+								{fullLayout ? (
+									<>
+										<Navigation>
+											<NavLink to="/notes">Notes</NavLink>
+											<NavLink to="/contact">Contact</NavLink>
+										</Navigation>
+										<SocialLinks
+											liClassName={styles.socialLink}
+										/>
+									</>
+								) : (
+									this.props.burger
+								)}
+							</div>
+						</div>
+					)
+				}}
+			</Mq>
 		)
 	}
 }
 
-export default Mq.withMq(Header)
+export default Header

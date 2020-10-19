@@ -15,6 +15,10 @@ import LegalRoute from '@/routes/legal'
 
 class App extends React.PureComponent {
 
+	state = {
+		overlayNavActive: false
+	}
+
 	get breakpoints () {
 		return {
 			small: 'screen and (max-width: 767px)',
@@ -32,7 +36,18 @@ class App extends React.PureComponent {
 					<Grid.Container>
 						<Grid flex="0">
 							<Grid.Cell>
-								<Header />
+								<Header
+									burger={
+										<Header.Burger
+											active={this.state.overlayNavActive}
+											onClick={() => {
+												this.setState({
+													overlayNavActive: !this.state.overlayNavActive
+												})
+											}}
+										/>
+									}
+								/>
 							</Grid.Cell>
 						</Grid>
 						<Grid>
