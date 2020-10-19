@@ -2,7 +2,7 @@ import { React } from '@/vendor'
 
 export default {
 	title: '2019 Strange Days',
-	date: '2019-01-01',
+	date: '2020-02-14',
 	image: require('./2019-strange-days@2x.jpg'),
 	body: (
 		<>
@@ -18,10 +18,10 @@ export default {
 			</p>
 			<p>
 				<strong>CHEMISTRY</strong><br />
-				pH: 3.6<br />
-				TA: 5.1 gm/L<br />
+				pH: 3.60<br />
+				TA: 5.10 gm/L<br />
 				Free SO2 at bottling: 4ppm<br />
-				Alcohol: 11.1% abv<br />
+				Alcohol: 11.10% abv<br />
 				RS: 0.68 g/L (0.07%)<br />
 				Malic Acid: {'<'}0.05 g/L
 			</p>

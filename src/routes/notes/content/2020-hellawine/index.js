@@ -2,30 +2,41 @@ import { React } from '@/vendor'
 
 export default {
 	title: '2020 Hellawine',
-	date: '2020-01-02',
+	date: '2020-10-01',
 	image: require('./2020-hellawine@2x.jpg'),
 	body: (
 		<>
-			A blend of 72% Riesling and 28% Petit Manseng. Has the hunter already become the hunted? As the hintermen march on the untamed wild pushes back as the once peaceful scenery turns territorial towards the uninvited travelers and the wildlife begins to come to life. The risk and reward of these uncharted lands might both be too great to turn back now.
-			If we had acid like this is highschool, we would all be better off! It’s like we crushed up sunlight, squirted a lime on it, then a dash of river stones, and there you have it. Bright bristling and so well balanced. This one will last a lifetime. 100 cases produced.
+			<p>We’re having a party on October 31th, which some may point out, is Halloween!</p>
+			<p>We will be convening for the second time at our space in Waynesboro. Join us for a great day celebrating the release of our 2018 Vintage in true Lightwell socially distanced style. Your ticket includes delicious grub and tastings of our latest and greatest wines. We will have wine for sale and a few surprises for you. We look forward to seeing all y'all in "The Boro" and will have your name on our guestlist.</p>
+			<p>The only way to get our 2018s now is to pre-order for pickup on the 32th.</p>
+			<p>We will also be offering a limited number of vintage series packs of Hintermen, Los Idiots, Goodbye Horses, and The Weird Ones Are Wolves. This is a last chance to purchase some of our earlier releases this year, including our first vintages. We will have verticals of our 2015s, 2016s, 2017s, and NEW 2018s.</p>
 			<p>
-				<strong>FRUIT SOURCES</strong><br />
-				Ox-Eye Riesling,<br />
-				Rosedale Petit Manseng
+				<strong>WHEN</strong><br />
+				October 31th from 1-5PM
 			</p>
 			<p>
-				<strong>WINEMAKING</strong><br />
-				Stomped whole clusters for a short, soft maceration before whole cluster pressing both varieties together. Co-fermented in neutral Hungarian and French oak 500L barrels. Aged for 14 months on the lees. Bottled 12/11/18 with no fining or tartrate stabilization.
+				<strong>WHERE</strong><br />
+				<a href="https://g.page/lightwellsurvey?share" target="_blank">Lightwell Survey Winery & Tasting Room</a><br />
+				200 W 12TH ST, UNIT# D53<br />
+				Waynesboro, VA 22980<br />
 			</p>
 			<p>
-				<strong>CHEMISTRY</strong><br />
-				pH: 3.19<br />
-				TA: 7.4 gm/L<br />
-				Free SO2 at bottling: 19ppm<br />
-				Alcohol: 12.1% abv<br />
-				G/F: 2.7 g/L<br />
-				Malic Acid: 1.2 g/L
+				<strong>ACCOMODATIONS</strong><br />
+				Rooms held under Lightwell Survey at <a href="https://www.wyndhamhotels.com/days-inn/waynesboro-virginia/days-inn-waynesboro-va/overview" target="_blank">The Days Inn of Waynesboro, 2060 Rosser Ave, Waynesboro, VA 22980</a>
 			</p>
+			<p>
+				<strong>WHAT TO BRING?</strong><br />
+				Mask, good attitude, money and a blanket
+			</p>
+			<p>
+				<strong>ATTIRE</strong><br />
+				Let's be safe, please mask up with your best spookiest or scariest and come in a costume or don't (there will be a prize)
+			</p>
+			<p>
+				<strong>QUESTIONS/CONTACT</strong><br />
+				<a href="mailto:wines@lightwellsurvey.com">wines@lightwellsurvey.com</a>
+			</p>
+
 		</>
 	)
 }
