@@ -13,7 +13,6 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@svgr/cli": "^5.4.0",
 		"classnames": "^2.2.6",
 		"history": "^5.0.0",
 		"lodash": "^4.17.19",
@@ -33,6 +32,7 @@
 		"@babel/plugin-proposal-optional-chaining": "^7.11.0",
 		"@babel/plugin-syntax-async-generators": "^7.2.0",
 		"@babel/preset-env": "^7.10.4",
+		"@svgr/cli": "^5.4.0",
 		"autoprefixer": "^9.6.0",
 		"babel-eslint": "^10.0.2",
 		"babel-plugin-import-glob": "^2.0.0",
