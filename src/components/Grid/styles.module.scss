@@ -55,6 +55,9 @@
 		padding-top:80px; padding-bottom:88px;
 	}
 }
-a.content:hover {
-	background:#000;
+a.content {
+	transition:background .3s;
+	&:hover {
+		background:#000;
+	}
 }
