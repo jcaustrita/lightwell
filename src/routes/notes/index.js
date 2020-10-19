@@ -1,4 +1,4 @@
-import { React, PropTypes, Helmet, NavLink } from '@/vendor'
+import { React, PropTypes, Helmet, Link } from '@/vendor'
 import { Grid, MastheadSubpage, Masthead, Fs } from '@/components'
 import StuffWeWrote from './StuffWeWrote'
 import styles from './styles.module.scss'
@@ -42,7 +42,7 @@ class NotesRoute extends React.PureComponent {
 								<Grid.Cell key={item.slug}>
 									<Grid.Content
 										className={styles.noteItem}
-										tag={NavLink}
+										tag={Link}
 										pad={1}
 										to={`./${item.slug}`}
 										children={
