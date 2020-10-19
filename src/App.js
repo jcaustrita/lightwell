@@ -1,6 +1,6 @@
 import { React, PropTypes, Helmet } from '@/vendor'
 import { Grid, Mq, ScrollToTop } from '@/components'
-import { Header, Subscribe, Footer } from '@/components/AppLayout'
+import { Header, Subscribe, Footer, OverlayNav } from '@/components/AppLayout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Routes
@@ -33,6 +33,7 @@ class App extends React.PureComponent {
 				<ScrollToTop />
 				<Mq.Provider config={this.breakpoints}>
 					<Helmet titleTemplate="%s :: Lightwell Survey Wines" />
+					<OverlayNav active={this.state.overlayNavActive} />
 					<Grid.Container>
 						<Grid flex="0">
 							<Grid.Cell>

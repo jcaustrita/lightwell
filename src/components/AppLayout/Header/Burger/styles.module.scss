@@ -7,6 +7,8 @@
  */
 .hamburger {
   display: block;
+  position:relative;
+  z-index:101;
   cursor: pointer;
   outline:none;
   transition-property: opacity, filter;

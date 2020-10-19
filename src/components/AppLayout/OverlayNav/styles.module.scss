@@ -1,0 +1,9 @@
+.nav {
+	position:fixed; width:100vw; height:100vh; background:#000; z-index:100; transition:opacity .3s;
+	&.enter, &.exitActive {
+		opacity:0;
+	}
+	&.enterActive {
+		opacity:1;
+	}
+}
