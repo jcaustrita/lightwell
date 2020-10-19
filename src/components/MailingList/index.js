@@ -21,9 +21,9 @@ class MailingList extends React.PureComponent {
 		return (
 			<div className={styles.mailingList}>
 				<Graphic className={styles.graphic} />
-				<div className={styles.blurb}>
-					Get notified on upcoming wine releases and other news.
-				</div>
+				<Fs contained align="center">
+					<p>Get notified on upcoming wine releases and other news.</p>
+				</Fs>
 				<form action={MAILCHIMP_FORM_URL} className={styles.form} onSubmit={this.submit} method="post" target="_blank">
 					<input
 						type="email"

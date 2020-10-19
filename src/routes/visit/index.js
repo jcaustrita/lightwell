@@ -16,7 +16,7 @@ class VisitRoute extends React.PureComponent {
 						<Grid stacked={!Mq.large}>
 							<Grid.Cell>
 								<Grid.Content pad={2}>
-									<Fs align="center">
+									<Fs align="center" contained>
 										<Fs variant="h2" tag="h2">Schedule a Tasting</Fs>
 										<p>Join us in Waynesboro, VA (the Old Mill) for a look into our signature approach to both winemaking and frienship.</p>
 										<p>For all requests, please schedule your tasting by calling 123-456-7890. We are currently taking groups up to 6, this includes non-tasters.</p>

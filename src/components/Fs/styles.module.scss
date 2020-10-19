@@ -42,6 +42,9 @@ $screen-diff: ($screen-max / 1px - $screen-min / 1px);
 			}
 		}
 	}
+	&.contained {
+		max-width:688px; margin:0 auto;
+	}
 }
 
 .h1 {

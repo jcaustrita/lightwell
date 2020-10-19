@@ -1,6 +1,5 @@
 import { React, PropTypes, Helmet } from '@/vendor'
 import { Grid, Fs } from '@/components'
-import styles from './styles.module.scss'
 
 class Cell extends React.PureComponent {
 	static propTypes = {
@@ -11,7 +10,7 @@ class Cell extends React.PureComponent {
 		return (
 			<Grid.Cell>
 				<Grid.Content pad={2}>
-					<Fs className={styles.textWrapper}>
+					<Fs contained>
 						<Fs tag="h2" variant="h2" align="center">{this.props.headline}</Fs>
 						{this.props.body}
 					</Fs>

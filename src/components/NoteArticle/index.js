@@ -17,10 +17,10 @@ class NoteArticle extends React.PureComponent {
 					src={this.props.image}
 					className={styles.image}
 				/>
-				<div className={styles.body}>
+				<Fs contained>
 					<Fs variant="h1" tag="h1" align="center">{this.props.title}</Fs>
 					{this.props.body}
-				</div>
+				</Fs>
 			</div>
 		)
 	}

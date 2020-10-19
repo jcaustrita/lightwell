@@ -10,7 +10,7 @@ class Cell extends React.PureComponent {
 		return (
 			<Grid.Cell>
 				<Grid.Content pad={2}>
-					<Fs align="center">
+					<Fs align="center" contained>
 						<Fs variant="h3" tag="h2">{this.props.title}</Fs>
 						{this.props.body}
 					</Fs>
