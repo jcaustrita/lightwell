@@ -1,6 +1,12 @@
 .socialLinks {
-	display:flex; align-items:center; margin:0; padding:0; list-style:none;
+	display:flex; justify-content:center; align-items:center; margin:0; padding:0; list-style:none;
+	li {
+		padding:0 calc(56px / 4);
+	}
 	svg {
-		display:block; width:16px;
+		display:block; width:16px; fill:currentColor;
+	}
+	li:hover svg {
+		fill:var(--accent-color); cursor:pointer;
 	}
 }

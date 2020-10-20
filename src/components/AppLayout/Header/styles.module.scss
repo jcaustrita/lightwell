@@ -34,34 +34,3 @@ $gutter: 56px;
 .navItem {
 	margin:0 calc(var(--cellGutter) / 2);
 }
-.navItem + .navItem {
-}
-
-.navLink {
-	font-family:Gin; font-size:20px; line-height:1; margin:-3px; padding:3px; position:relative; transition:all .15s ease-in-out;
-	&:before {
-		position:absolute; top:50%; left:0; width:0; height:3px; content:''; background-color:var(--accent-color); transition:all .15s ease-in-out;
-	}
-	&:hover {
-		color:var(--accent-color);
-	}
-	&.active {
-		color:#fff;
-		&:before {
-			width:100%;
-		}
-	}
-}
-
-.socialLink {
-	padding:0 calc(var(--cellGutter) / 4);
-	svg {
-		fill:currentColor;
-	}
-	&:hover {
-		svg {
-			// todo: this is tmp
-			fill:var(--accent-color); cursor:pointer;
-		}
-	}
-}
