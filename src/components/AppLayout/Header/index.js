@@ -56,9 +56,7 @@ class Header extends React.PureComponent {
 											<NavLink to="/notes">Notes</NavLink>
 											<NavLink to="/contact">Contact</NavLink>
 										</Navigation>
-										<SocialLinks
-											liClassName={styles.socialLink}
-										/>
+										<SocialLinks />
 									</>
 								) : (
 									this.props.burger
