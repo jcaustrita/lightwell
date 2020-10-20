@@ -1,7 +1,8 @@
-import { React, PropTypes, Link, NavLink as BaseNavLink } from '@/vendor'
+import { React, PropTypes, Link } from '@/vendor'
 import Logo from './Logo'
 import Burger from './Burger'
 import SocialLinks from '@/components/SocialLinks'
+import NavLink from '@/components/NavLink'
 import Mq from '@/components/Mq'
 import styles from './styles.module.scss'
 
@@ -14,18 +15,12 @@ class Navigation extends React.PureComponent {
 			<ul className={styles.nav}>
 				{React.Children.map(this.props.children, (child) => (
 					<li className={styles.navItem}>
-						{React.cloneElement(child, {
-							className: styles.navLink
-						})}
+						{child}
 					</li>
 				))}
 			</ul>
 		)
 	}
-}
-
-function NavLink (props) {
-	return <BaseNavLink {...props} activeClassName={styles.active} />
 }
 
 class Header extends React.PureComponent {
