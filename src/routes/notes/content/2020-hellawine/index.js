@@ -6,7 +6,7 @@ export default {
 	image: require('./2020-hellawine@2x.jpg'),
 	body: (
 		<>
-			<p>We’re having a party on October 31th, which some may point out, is Halloween!</p>
+			<p>We're having a party on October 31th, which some may point out, is Halloween!</p>
 			<p>We will be convening for the second time at our space in Waynesboro. Join us for a great day celebrating the release of our 2018 Vintage in true Lightwell socially distanced style. Your ticket includes delicious grub and tastings of our latest and greatest wines. We will have wine for sale and a few surprises for you. We look forward to seeing all y'all in "The Boro" and will have your name on our guestlist.</p>
 			<p>The only way to get our 2018s now is to pre-order for pickup on the 32th.</p>
 			<p>We will also be offering a limited number of vintage series packs of Hintermen, Los Idiots, Goodbye Horses, and The Weird Ones Are Wolves. This is a last chance to purchase some of our earlier releases this year, including our first vintages. We will have verticals of our 2015s, 2016s, 2017s, and NEW 2018s.</p>

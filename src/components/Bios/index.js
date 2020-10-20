@@ -3,6 +3,16 @@ import { Mq, Grid, Fs } from '@/components'
 import styles from './styles.module.scss'
 
 class Bio extends React.PureComponent {
+
+	static propTypes = {
+		headshot: PropTypes.element,
+		name: PropTypes.string,
+		role: PropTypes.string,
+		body: PropTypes.node,
+		flip: PropTypes.bool,
+		stacked: PropTypes.bool
+	}
+
 	render () {
 		const { headshot, name, role, body, flip, stacked } = this.props
 		return (
@@ -24,10 +34,14 @@ class Bio extends React.PureComponent {
 			</Grid.Cell>
 		)
 	}
+
 }
 
 class Bios extends React.PureComponent {
 	static Bio = Bio
+	static propTypes = {
+		children: PropTypes.node
+	}
 	render () {
 		return (
 			<Mq>

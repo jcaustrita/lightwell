@@ -1,7 +1,5 @@
 import React from 'react'
-import StandardPageLayout from '@/components/StandardPageLayout'
 import { Container, Helmet } from '@/components/common'
-const { LayoutSection } = StandardPageLayout
 
 class PageNotFound extends React.PureComponent {
 

@@ -11,6 +11,10 @@ class Container extends React.PureComponent {
 }
 
 class Cell extends React.PureComponent {
+	static propTypes = {
+		className: PropTypes.string,
+		flex: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+	}
 	render () {
 		const { className, flex, ...props } = this.props
 		const classNames = Classnames(className, styles.cell)

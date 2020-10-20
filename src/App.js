@@ -1,4 +1,4 @@
-import { React, PropTypes, Helmet } from '@/vendor'
+import { React, Helmet } from '@/vendor'
 import { Grid, Mq, ScrollToTop, PageChangeListener } from '@/components'
 import { Header, Subscribe, Footer, OverlayNav } from '@/components/AppLayout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

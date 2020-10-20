@@ -1,8 +1,13 @@
-import { React } from '@/vendor'
+import { React, PropTypes } from '@/vendor'
 
 const Context = React.createContext()
 
 class Provider extends React.PureComponent {
+
+	static propTypes = {
+		config: PropTypes.object.isRequired,
+		children: PropTypes.node
+	}
 
 	state = {}
 
@@ -20,7 +25,7 @@ class Provider extends React.PureComponent {
 		this.setBodyClasses()
 	}
 
-	componentDidUpdate (props, state) {
+	componentDidUpdate () {
 		this.setBodyClasses()
 	}
 

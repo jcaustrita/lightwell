@@ -6,8 +6,8 @@ module.exports = {
 		es6: true
 	},
 	extends: [
-		"eslint:recommended",
-		"plugin:react/recommended"
+		'eslint:recommended',
+		'plugin:react/recommended'
 	],
 	settings: {
 		react: {
@@ -18,6 +18,7 @@ module.exports = {
 		'react/display-name': 'off',
 		'react/no-children-prop': 'off',
 		'react/jsx-no-target-blank': 'off',
+		'react/no-unescaped-entities': 'off',
 		// ignore indenting
 		'indent': ['warn', 'tab', { SwitchCase: 1 }],
 		// single quotes

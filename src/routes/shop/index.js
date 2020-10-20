@@ -1,4 +1,4 @@
-import { React, PropTypes, Helmet } from '@/vendor'
+import { React, Helmet } from '@/vendor'
 import { Grid, MastheadSubpage, Masthead, VinoFrame } from '@/components'
 
 class ShopRoute extends React.PureComponent {

@@ -1,5 +1,5 @@
 import { React, PropTypes } from '@/vendor'
-import { clamp, map, getOffset, calcElementTextShadow } from './internals'
+import { calcElementTextShadow } from './internals'
 
 class Headlight extends React.PureComponent {
 
@@ -35,7 +35,7 @@ class Headlight extends React.PureComponent {
 		this.$pending = true
 	}
 
-	evaluateShadow = (event) => {
+	evaluateShadow = () => {
 		window.requestAnimationFrame(() => {
 			if(this.$pending) {
 				const { x, y } = this.$mouse

@@ -1,4 +1,4 @@
-import { React, PropTypes, Helmet } from '@/vendor'
+import { React, Helmet } from '@/vendor'
 import { Mq, Grid, Gallery, Fs } from '@/components'
 import * as gallery from './gallery/*.jpg'
 import styles from './styles.module.scss'

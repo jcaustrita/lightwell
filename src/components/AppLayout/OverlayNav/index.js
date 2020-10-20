@@ -1,4 +1,4 @@
-import { React, Link } from '@/vendor'
+import { React, PropTypes } from '@/vendor'
 import CSSTransition from '@/components/CSSTransition'
 import NavLink from '@/components/NavLink'
 import SocialLinks from '@/components/SocialLinks'
@@ -13,14 +13,19 @@ const NAV = [
 ]
 
 class OverlayNav extends React.PureComponent {
+
+	static propTypes = {
+		active: PropTypes.bool
+	}
+
 	render () {
 		return (
 			<CSSTransition
 				in={this.props.active}
 				classNames={{
- 					enter: styles.enter,
- 					enterActive: styles.enterActive,
-		 			exitActive: styles.exitActive
+					enter: styles.enter,
+					enterActive: styles.enterActive,
+					exitActive: styles.exitActive
 				}}
 				children={
 					<div className={styles.nav}>
@@ -41,6 +46,7 @@ class OverlayNav extends React.PureComponent {
 			/>
 		)
 	}
+
 }
 
 export default OverlayNav

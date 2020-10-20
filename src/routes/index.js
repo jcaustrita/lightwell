@@ -1,4 +1,4 @@
-import { React, PropTypes, Helmet } from '@/vendor'
+import { React, Helmet } from '@/vendor'
 import { Grid } from '@/components'
 
 class IndexRoute extends React.PureComponent {

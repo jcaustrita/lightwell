@@ -1,4 +1,4 @@
-import { React, PropTypes } from '@/vendor'
+import { PropTypes } from '@/vendor'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 

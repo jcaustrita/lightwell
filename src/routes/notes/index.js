@@ -1,4 +1,4 @@
-import { React, PropTypes, Helmet, Link } from '@/vendor'
+import { React, Helmet, Link } from '@/vendor'
 import { Grid, MastheadSubpage, Masthead, Fs } from '@/components'
 import StuffWeWrote from './StuffWeWrote'
 import styles from './styles.module.scss'

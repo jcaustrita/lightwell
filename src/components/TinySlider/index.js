@@ -1,5 +1,5 @@
 import { React, PropTypes, Classnames } from '@/vendor'
-import { tns } from "tiny-slider/src/tiny-slider"
+import { tns } from 'tiny-slider/src/tiny-slider'
 import 'tiny-slider/dist/tiny-slider.css'
 import styles from './styles.module.scss'
 
