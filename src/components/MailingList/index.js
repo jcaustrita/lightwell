@@ -11,12 +11,6 @@ class MailingList extends React.PureComponent {
 		email: ''
 	}
 
-	submit = async (e) => {
-		this.setState({
-			email: ''
-		})
-	}
-
 	render () {
 		return (
 			<div className={styles.mailingList}>
@@ -24,7 +18,7 @@ class MailingList extends React.PureComponent {
 				<Fs contained align="center">
 					<p>Get notified on upcoming wine releases and other news.</p>
 				</Fs>
-				<form action={MAILCHIMP_FORM_URL} className={styles.form} onSubmit={this.submit} method="post" target="_blank">
+				<form action={MAILCHIMP_FORM_URL} className={styles.form} method="post" target="_blank">
 					<input
 						type="email"
 						className={styles.input}
@@ -35,7 +29,15 @@ class MailingList extends React.PureComponent {
 								email: e.target.value
 							})
 						}}
+						placeholder="Your email address"
 					/>
+					<span className={styles.honeypot} aria-hidden="true">
+						<input
+							type="text"
+							name="b_6185fbfd0a020f0e5e1f3cf93_27a437fe17"
+							tabIndex="-1"
+						/>
+					</span>
 					<input
 						type="submit"
 						className={styles.submit}
