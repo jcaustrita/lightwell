@@ -1,6 +1,7 @@
 import { React, PropTypes, Helmet } from '@/vendor'
 import { Mq, Grid, Gallery, Fs } from '@/components'
 import * as gallery from './gallery/*.jpg'
+import styles from './styles.module.scss'
 
 class VisitRoute extends React.PureComponent {
 
@@ -31,7 +32,7 @@ class VisitRoute extends React.PureComponent {
 								</Grid.Content>
 							</Grid.Cell>
 							<Grid.Cell>
-								<Gallery>
+								<Gallery className={styles.gallery}>
 									{Object.values(gallery).map((src) => (
 										<Gallery.Slide src={src} key={src} />
 									))}

@@ -1,4 +1,4 @@
-import { React, PropTypes } from '@/vendor'
+import { React, PropTypes, Classnames } from '@/vendor'
 import TinySlider from '../TinySlider'
 import styles from './styles.module.scss'
 
@@ -24,14 +24,16 @@ class Slide extends React.PureComponent {
 class Gallery extends React.PureComponent {
 
 	static propTypes = {
+		className: PropTypes.string,
 		children: PropTypes.node
 	}
 
 	static Slide = Slide
 
 	render () {
+		const className = Classnames(styles.gallery, this.props.className)
 		return (
-			<div className={styles.gallery}>
+			<div className={className}>
 				<TinySlider
 					options={{ controls: false, navPosition: 'bottom' }}
 					children={this.props.children}
