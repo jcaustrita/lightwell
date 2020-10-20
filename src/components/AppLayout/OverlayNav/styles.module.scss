@@ -1,9 +1,25 @@
 .nav {
-	position:fixed; width:100vw; height:100vh; background:#000; z-index:100; transition:opacity .3s;
+	position:fixed; width:100vw; height:100vh; display:flex; justify-content:center; align-items:center; background:#000; z-index:100; transition:opacity .3s;
 	&.enter, &.exitActive {
 		opacity:0;
 	}
 	&.enterActive {
 		opacity:1;
+	}
+}
+
+.primary {
+	margin:0; padding:0; list-style:none;
+	& > li {
+		display:block; text-align:center;
+		& > a {
+			font-size:48px; line-height:1;
+		}
+	}
+	& > li + li {
+		margin-top:8px;
+	}
+	.social {
+		margin-top:56px;
 	}
 }

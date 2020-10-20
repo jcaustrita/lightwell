@@ -1,5 +1,5 @@
 import { React, PropTypes, Helmet } from '@/vendor'
-import { Grid, Mq, ScrollToTop } from '@/components'
+import { Grid, Mq, ScrollToTop, PageChangeListener } from '@/components'
 import { Header, Subscribe, Footer, OverlayNav } from '@/components/AppLayout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -30,6 +30,13 @@ class App extends React.PureComponent {
 	render () {
 		return (
 			<BrowserRouter>
+				<PageChangeListener
+					callback={() => {
+						this.setState({
+							overlayNavActive: false
+						})
+					}}
+				/>
 				<ScrollToTop />
 				<Mq.Provider config={this.breakpoints}>
 					<Helmet titleTemplate="%s :: Lightwell Survey Wines" />
