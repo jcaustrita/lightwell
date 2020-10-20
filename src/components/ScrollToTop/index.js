@@ -1,14 +1,14 @@
-import { useEffect } from "react"
-import { useLocation } from "react-router-dom"
+import { React } from '@/vendor'
+import PageChangeListener from '@/components/PageChangeListener'
 import Velocity from 'velocity-animate'
 
-export default () => {
-	const { pathname } = useLocation()
-	useEffect(() => {
-		Velocity(document.body, 'scroll', {
-			duration: 300,
-			easing: 'easeInOutExpo'
-		})
-	}, [pathname])
-	return null
-}
+export default () => (
+	<PageChangeListener
+		callback={() => {
+			Velocity(document.body, 'scroll', {
+				duration: 300,
+				easing: 'easeInOutExpo'
+			})
+		}}
+	/>
+)
