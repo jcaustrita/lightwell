@@ -42,7 +42,7 @@ class App extends React.PureComponent {
 					<Helmet titleTemplate="%s :: Lightwell Survey Wines" />
 					<OverlayNav active={this.state.overlayNavActive} />
 					<Grid.Container>
-						<Grid flex="0">
+						<Grid flex={0}>
 							<Grid.Cell>
 								<Header
 									burger={
@@ -72,12 +72,12 @@ class App extends React.PureComponent {
 								</Routes>
 							</Grid.Cell>
 						</Grid>
-						<Grid flex="0">
+						<Grid flex={0}>
 							<Grid.Cell>
 								<Subscribe />
 							</Grid.Cell>
 						</Grid>
-						<Grid flex="0">
+						<Grid flex={0}>
 							<Grid.Cell>
 								<Footer />
 							</Grid.Cell>

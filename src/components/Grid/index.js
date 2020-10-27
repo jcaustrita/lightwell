@@ -19,7 +19,7 @@ class Cell extends React.PureComponent {
 		const { className, flex, ...props } = this.props
 		const classNames = Classnames(className, styles.cell)
 		const style = {
-			flex
+			flex: (flex === 0) ? '0 0 auto' : flex
 		}
 		return (
 			<div className={classNames} style={style} {...props} />
@@ -103,7 +103,8 @@ class Grid extends React.PureComponent {
 	get style () {
 		const style = {}
 		if(this.props.flex !== undefined) {
-			style.flex = this.props.flex
+			const flex = this.props.flex
+			style.flex = (flex === 0) ? '0 0 auto' : flex
 		}
 		if(this.props.grow === false) {
 			style.flexGrow = 0

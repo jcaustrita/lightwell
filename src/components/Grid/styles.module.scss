@@ -3,7 +3,7 @@
 }
 
 .grid {
-	display:flex; flex:1;
+	display:flex; flex:1 1 auto;
 	&.stacked {
 		flex-direction:column;
 	}
@@ -38,7 +38,7 @@
 }
 
 .content {
-	display:flex; align-items:center; justify-content:center; background:#252527; height:100%; padding:8px 8%;
+	display:flex; flex:1 1 auto; align-items:center; justify-content:center; background:#252527; height:100%; padding:8px 8%;
 	&.alt {
 		background:#303032;
 	}
