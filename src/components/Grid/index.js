@@ -82,7 +82,6 @@ class Grid extends React.PureComponent {
 		stacked: PropTypes.bool,
 		vhFill: PropTypes.bool,
 		grow: PropTypes.bool,
-		block: PropTypes.bool,
 		reverse: PropTypes.bool,
 		className: PropTypes.string
 	}
@@ -94,8 +93,7 @@ class Grid extends React.PureComponent {
 			{
 				[styles.stacked]: this.props.stacked,
 				[styles.vhFill]: this.props.vhFill,
-				[styles.reverse]: this.props.reverse,
-				[styles.block]: this.props.block
+				[styles.reverse]: this.props.reverse
 			}
 		)
 	}

@@ -37,7 +37,7 @@ class NotesRoute extends React.PureComponent {
 						/>
 					}
 					body={
-						<Grid stacked block>
+						<Grid stacked>
 							{content.map((item) => (
 								<Grid.Cell key={item.slug}>
 									<Grid.Content

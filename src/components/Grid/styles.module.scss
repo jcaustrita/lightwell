@@ -10,9 +10,6 @@
 	&.vhFill {
 		min-height:calc(100vh - var(--headerHeight) - (var(--grid-gutter) * 2))
 	}
-	&.block {
-		display:block; flex:0;
-	}
 	&.reverse {
 		flex-direction:row-reverse;
 	}

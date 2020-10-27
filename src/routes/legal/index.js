@@ -34,7 +34,7 @@ class LegalRoute extends React.PureComponent {
 				<Helmet>
 					<title>Legal</title>
 				</Helmet>
-				<Grid block stacked>
+				<Grid stacked>
 					<Cell
 						headline="Shipping"
 						body={

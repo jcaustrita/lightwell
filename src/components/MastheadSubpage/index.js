@@ -12,7 +12,7 @@ class MastheadSubpage extends React.PureComponent {
 
 		return (
 			<>
-				<Grid block={true}>
+				<Grid>
 					<Grid.Cell>
 						<Grid.Content>
 							{this.props.masthead}

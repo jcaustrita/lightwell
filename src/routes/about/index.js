@@ -28,7 +28,7 @@ class AboutRoute extends React.PureComponent {
 					}
 					body={
 						<>
-							<Grid stacked block>
+							<Grid stacked>
 								<Grid.Cell>
 									<Grid.Content pad={2}>
 										<Fs contained>
