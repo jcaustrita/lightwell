@@ -4,7 +4,7 @@ import { Header, Subscribe, Footer, OverlayNav } from '@/components/AppLayout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Routes
-import IndexRoute from '@/routes/index'
+import HomepageRoute from '@/routes/homepage'
 import ShopRoute from '@/routes/shop'
 import AboutRoute from '@/routes/about'
 import VisitRoute from '@/routes/visit'
@@ -61,7 +61,7 @@ class App extends React.PureComponent {
 						<Grid>
 							<Grid.Cell>
 								<Routes>
-									<Route path="/" element={<IndexRoute />} />
+									<Route path="/" element={<HomepageRoute />} />
 									<Route path="/shop" element={<ShopRoute />} />
 									<Route path="/about" element={<AboutRoute />} />
 									<Route path="/visit" element={<VisitRoute />} />
