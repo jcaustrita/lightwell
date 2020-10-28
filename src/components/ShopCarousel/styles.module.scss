@@ -1,0 +1,20 @@
+.shopCarousel,
+.slideContent {
+	min-height:600px; max-height:900px; height:80vh;
+	:global(.screen-small) & {
+		min-height:500px; max-height:700px;
+	}
+}
+
+.slideContent {
+	display:flex; flex-direction:column; justify-content:flex-end; align-items:center; text-align:center; padding:0 48px 48px;
+	.image {
+		margin-bottom:24px; max-width:400px;
+		:global(.screen-small) & {
+			max-width:300px;
+		}
+	}
+	.title {
+		min-height:2.4em; margin-top:8px;
+	}
+}
