@@ -40,7 +40,7 @@
 		background:#303032;
 	}
 	&.bg {
-		background-size:cover; background-position:center center;
+		background-size:cover; background-position:center center; padding:0;
 		:global(.screen-small) & {
 			height:300px;
 		}
