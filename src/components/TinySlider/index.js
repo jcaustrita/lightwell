@@ -11,7 +11,8 @@ class TinySlider extends React.PureComponent {
 
 	static propTypes = {
 		options: PropTypes.object,
-		children: PropTypes.node
+		children: PropTypes.node,
+		className: PropTypes.string
 	}
 
 	static Slide = ({ className, ...props }) => {
@@ -28,19 +29,29 @@ class TinySlider extends React.PureComponent {
 		this.$slider = tns({
 			container: this.$el,
 			mouseDrag: true,
+			speed: 500,
+			controls: false,
+			navPosition: 'bottom',
+			autoplay: true,
+			autoplayHoverPause: false,
+			autoplayTimeout: 3500,
+			autoplayButtonOutput: false,
 			...this.props.options
 		})
 	}
 
 	render () {
+		const className = Classnames(styles.sliderWrapper, this.props.className)
 		return (
-			<ul
-				className={styles.slider}
-				ref={(el) => {
-					this.$el = el
-				}}
-				children={this.props.children}
-			/>
+			<div className={className}>
+				<ul
+					className={styles.slider}
+					ref={(el) => {
+						this.$el = el
+					}}
+					children={this.props.children}
+				/>
+			</div>
 		)
 	}
 

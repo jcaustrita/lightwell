@@ -1,3 +1,27 @@
+.sliderWrapper {
+	position:relative; width:100%; height:100%; overflow:hidden;
+	:global {
+		.tns-slider, .tns-item {
+			height:100%;
+		}
+		.tns-inner {
+			position:absolute; width:100%; height:100%;
+		}
+		.tns-nav {
+			position:absolute; bottom:24px; width:100%; display:flex; align-items:center; justify-content:center; margin-top:16px;
+			button {
+				display:block; width:8px; height:8px; background:#000; border:none; padding:0; border-radius:50%; outline:none;
+				&.tns-nav-active {
+					background:#fff;
+				}
+			}
+			button + button {
+				margin-left:8px;
+			}
+		}
+	}
+}
+
 .slider {
 	margin:0; padding:0; list-style:none;
 }
