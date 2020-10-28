@@ -1,6 +1,7 @@
 import { React, PropTypes, Classnames } from '@/vendor'
 import TinySlider from '../TinySlider'
 import styles from './styles.module.scss'
+import * as images from './images/*.jpg'
 
 class Slide extends React.PureComponent {
 
@@ -27,8 +28,6 @@ class Gallery extends React.PureComponent {
 		className: PropTypes.string
 	}
 
-	static Slide = Slide
-
 	render () {
 		const { className, ...props } = this.props
 		return (
@@ -37,6 +36,11 @@ class Gallery extends React.PureComponent {
 					styles.gallery,
 					className
 				)}
+				children={
+					Object.values(images).map((src) => (
+						<Slide src={src} key={src} />
+					))
+				}
 				{...props}
 			/>
 		)

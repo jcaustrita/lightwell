@@ -1,6 +1,5 @@
 import { React, PropTypes, Helmet, Link } from '@/vendor'
 import { Mq, Grid, Fs, Img, Gallery, ShopCarousel } from '@/components'
-import * as gallery from '../visit/gallery/*.jpg'
 import styles from './styles.module.scss'
 
 class LinkCell extends React.PureComponent {
@@ -128,11 +127,7 @@ class IndexRoute extends React.PureComponent {
 										</Grid>
 									</Grid.Cell>
 									<Grid.Cell flex={2}>
-										<Gallery className={styles.gallery}>
-											{Object.values(gallery).map((src) => (
-												<Gallery.Slide src={src} key={src} />
-											))}
-										</Gallery>
+										<Gallery />
 									</Grid.Cell>
 									<Grid.Cell>
 										<Grid stacked>

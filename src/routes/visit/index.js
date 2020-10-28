@@ -1,6 +1,5 @@
 import { React, Helmet } from '@/vendor'
 import { Mq, Grid, Gallery, Fs } from '@/components'
-import * as gallery from './gallery/*.jpg'
 
 class VisitRoute extends React.PureComponent {
 
@@ -31,11 +30,7 @@ class VisitRoute extends React.PureComponent {
 								</Grid.Content>
 							</Grid.Cell>
 							<Grid.Cell>
-								<Gallery>
-									{Object.values(gallery).map((src) => (
-										<Gallery.Slide src={src} key={src} />
-									))}
-								</Gallery>
+								<Gallery />
 							</Grid.Cell>
 						</Grid>
 					)}
