@@ -12,12 +12,6 @@
 	}
 }
 
-.gallery {
-	:global(.screen-large) & {
-		min-height:700px;
-	}
-}
-
 .linkCell {
 	img {
 		margin:0 auto;
@@ -25,4 +19,8 @@
 	h2 {
 		margin-top:8px;
 	}
+}
+
+.shopCarouselWrapper {
+	padding:0 !important;
 }

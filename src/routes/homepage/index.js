@@ -1,5 +1,5 @@
 import { React, PropTypes, Helmet, Link } from '@/vendor'
-import { Mq, Grid, Fs, Img, Gallery } from '@/components'
+import { Mq, Grid, Fs, Img, Gallery, ShopCarousel } from '@/components'
 import * as gallery from '../visit/gallery/*.jpg'
 import styles from './styles.module.scss'
 
@@ -38,8 +38,25 @@ class IndexRoute extends React.PureComponent {
 									<Grid.Cell>
 										<Grid stacked>
 											<Grid.Cell>
-												<Grid.Content>
-													[Shop rotator]
+												<Grid.Content className={styles.shopCarouselWrapper}>
+													<ShopCarousel>
+														<ShopCarousel.Slide
+															image={require('./currentReleases/2017-hintermen@2x.jpg')}
+															title="2017 Hintermen"
+														/>
+														<ShopCarousel.Slide
+															image={require('./currentReleases/2017-horses@2x.jpg')}
+															title="2017 Goodbye Horses"
+														/>
+														<ShopCarousel.Slide
+															image={require('./currentReleases/2017-idiots@2x.jpg')}
+															title="2017 Los Idiots"
+														/>
+														<ShopCarousel.Slide
+															image={require('./currentReleases/2017-wolves@2x.jpg')}
+															title="2017 The Weird Ones Are Wolves"
+														/>
+													</ShopCarousel>
 												</Grid.Content>
 											</Grid.Cell>
 											<Grid.Cell flex={0}>
@@ -53,7 +70,7 @@ class IndexRoute extends React.PureComponent {
 									</Grid.Cell>
 									<Grid.Cell>
 										<Grid stacked>
-											<Grid.Cell flex={0}>
+											<Grid.Cell>
 												<Grid.Content pad={1} light className={styles.quote}>
 													<Fs align="center">
 														“Lightwell Survey Wines produces small batches of lively reds, dense whites and unique combinations of the two.”
@@ -62,7 +79,7 @@ class IndexRoute extends React.PureComponent {
 													<Img src={require('./little-larry@2x.png')} className={styles.larry} />
 												</Grid.Content>
 											</Grid.Cell>
-											<Grid.Cell>
+											<Grid.Cell flex={2}>
 												<Grid stacked={Mq.small}>
 													<Grid.Cell>
 														<Grid stacked>
@@ -71,6 +88,7 @@ class IndexRoute extends React.PureComponent {
 																	to="/notes/2020-hellawine"
 																	pre={<Img src={require('./10-31-2020@2x.png')} />}
 																	primary="Hellawine Release Party"
+																	light
 																/>
 															</Grid.Cell>
 															<Grid.Cell>
@@ -102,9 +120,11 @@ class IndexRoute extends React.PureComponent {
 													primary="Tasting Room"
 												/>
 											</Grid.Cell>
-											<Grid.Cell flex={2}>
-												<Grid.Content bg={require('./pic2@2x.jpg')} />
-											</Grid.Cell>
+											{Mq.large && (
+												<Grid.Cell flex={2}>
+													<Grid.Content bg={require('./pic2@2x.jpg')} />
+												</Grid.Cell>
+											)}
 										</Grid>
 									</Grid.Cell>
 									<Grid.Cell flex={2}>
@@ -121,6 +141,7 @@ class IndexRoute extends React.PureComponent {
 													to="/shop"
 													pre="The Cellar"
 													primary="Buy Wine"
+													light
 												/>
 											</Grid.Cell>
 											<Grid.Cell flex={2}>
