@@ -37,7 +37,8 @@ class Content extends React.PureComponent {
 		className: PropTypes.string,
 		bg: PropTypes.string,
 		pad: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-		tag: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+		tag: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+		light: PropTypes.bool
 	}
 
 	get passThroughProps () {
@@ -49,7 +50,8 @@ class Content extends React.PureComponent {
 			styles.content,
 			this.props.className,
 			{
-				[styles.bg]: !!this.props.bg
+				[styles.bg]: !!this.props.bg,
+				[styles.light]: this.props.light
 			},
 			(this.props.pad) ? styles[`pad${this.props.pad}`] : null
 		)
