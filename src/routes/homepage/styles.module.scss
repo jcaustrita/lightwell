@@ -1,0 +1,28 @@
+.quote {
+	--quote-offset: 48px;
+	position:relative;
+	.signed {
+		margin-top:32px;
+	}
+	.larry {
+		position:absolute; bottom:0; right:var(--quote-offset); transform:translateY(50%);
+	}
+	:global(.screen-small) & {
+		--quote-offset: 24px;
+	}
+}
+
+.gallery {
+	:global(.screen-large) & {
+		min-height:700px;
+	}
+}
+
+.linkCell {
+	img {
+		margin:0 auto;
+	}
+	h2 {
+		margin-top:8px;
+	}
+}

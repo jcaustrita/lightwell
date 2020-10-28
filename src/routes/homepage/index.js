@@ -1,5 +1,25 @@
-import { React, Helmet } from '@/vendor'
-import { Mq, Grid } from '@/components'
+import { React, PropTypes, Helmet, Link } from '@/vendor'
+import { Mq, Grid, Fs, Img, Gallery } from '@/components'
+import * as gallery from '../visit/gallery/*.jpg'
+import styles from './styles.module.scss'
+
+class LinkCell extends React.PureComponent {
+	static propTypes = {
+		pre: PropTypes.node,
+		primary: PropTypes.string
+	}
+	render () {
+		const { pre, primary, ...props } = this.props
+		return (
+			<Grid.Content pad={1} className={styles.linkCell} tag={Link} {...props}>
+				<Fs align="center">
+					{pre}
+					<Fs tag="h2" variant="h2">{primary}</Fs>
+				</Fs>
+			</Grid.Content>
+		)
+	}
+}
 
 class IndexRoute extends React.PureComponent {
 
@@ -23,8 +43,10 @@ class IndexRoute extends React.PureComponent {
 												</Grid.Content>
 											</Grid.Cell>
 											<Grid.Cell flex={0}>
-												<Grid.Content>
-													[Free ground shipping]
+												<Grid.Content light>
+													<Fs align="center">
+														🍷 FREE Ground Shipping 🚚
+													</Fs>
 												</Grid.Content>
 											</Grid.Cell>
 										</Grid>
@@ -32,8 +54,12 @@ class IndexRoute extends React.PureComponent {
 									<Grid.Cell>
 										<Grid stacked>
 											<Grid.Cell flex={0}>
-												<Grid.Content pad={1}>
-													[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]
+												<Grid.Content pad={1} light className={styles.quote}>
+													<Fs align="center">
+														“Lightwell Survey Wines produces small batches of lively reds, dense whites and unique combinations of the two.”
+													</Fs>
+													<Img src={require('./signature-sebastian@2x.png')} className={styles.signed} />
+													<Img src={require('./little-larry@2x.png')} className={styles.larry} />
 												</Grid.Content>
 											</Grid.Cell>
 											<Grid.Cell>
@@ -41,21 +67,23 @@ class IndexRoute extends React.PureComponent {
 													<Grid.Cell>
 														<Grid stacked>
 															<Grid.Cell>
-																<Grid.Content pad={1}>
-																	[Notes Article]
-																</Grid.Content>
+																<LinkCell
+																	to="/notes/2020-hellawine"
+																	pre={<Img src={require('./10-31-2020@2x.png')} />}
+																	primary="Hellawine Release Party"
+																/>
 															</Grid.Cell>
 															<Grid.Cell>
-																<Grid.Content pad={1}>
-																	[Our Story]
-																</Grid.Content>
+																<LinkCell
+																	to="/about"
+																	pre="Winemaking"
+																	primary="Our Story"
+																/>
 															</Grid.Cell>
 														</Grid>
 													</Grid.Cell>
 													<Grid.Cell>
-														<Grid.Content>
-															[Picture]
-														</Grid.Content>
+														<Grid.Content bg={require('./pic1@2x.jpg')} />
 													</Grid.Cell>
 												</Grid>
 											</Grid.Cell>
@@ -68,32 +96,36 @@ class IndexRoute extends React.PureComponent {
 									<Grid.Cell>
 										<Grid stacked>
 											<Grid.Cell>
-												<Grid.Content pad={1}>
-													[Tasting Room]
-												</Grid.Content>
+												<LinkCell
+													to="/visit"
+													pre="Coming 2020"
+													primary="Tasting Room"
+												/>
 											</Grid.Cell>
-											<Grid.Cell>
-												<Grid.Content>
-													[Picture]
-												</Grid.Content>
+											<Grid.Cell flex={2}>
+												<Grid.Content bg={require('./pic2@2x.jpg')} />
 											</Grid.Cell>
 										</Grid>
 									</Grid.Cell>
-									<Grid.Cell>
-										<Grid.Content>
-											[Picture]
-										</Grid.Content>
+									<Grid.Cell flex={2}>
+										<Gallery className={styles.gallery}>
+											{Object.values(gallery).map((src) => (
+												<Gallery.Slide src={src} key={src} />
+											))}
+										</Gallery>
 									</Grid.Cell>
 									<Grid.Cell>
 										<Grid stacked>
 											<Grid.Cell>
-												<Grid.Content pad={1}>
-													[Buy Wine]
-												</Grid.Content>
+												<LinkCell
+													to="/shop"
+													pre="The Cellar"
+													primary="Buy Wine"
+												/>
 											</Grid.Cell>
-											<Grid.Cell>
-												<Grid.Content>
-													[W]
+											<Grid.Cell flex={2}>
+												<Grid.Content pad={2}>
+													<Img src={require('./W@2x.png')} />
 												</Grid.Content>
 											</Grid.Cell>
 										</Grid>
