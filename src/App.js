@@ -4,6 +4,7 @@ import { Header, Subscribe, Footer, OverlayNav } from '@/components/AppLayout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Routes
+import PageNotFoundRoute from '@/routes/404'
 import HomepageRoute from '@/routes/homepage'
 import ShopRoute from '@/routes/shop'
 import AboutRoute from '@/routes/about'
@@ -61,6 +62,7 @@ class App extends React.PureComponent {
 						<Grid>
 							<Grid.Cell>
 								<Routes>
+									<Route path="*" element={<PageNotFoundRoute />} />
 									<Route path="/" element={<HomepageRoute />} />
 									<Route path="/shop" element={<ShopRoute />} />
 									<Route path="/about" element={<AboutRoute />} />

@@ -1,7 +1,7 @@
-import React from 'react'
-import { Container, Helmet } from '@/components/common'
+import { React, Helmet } from '@/vendor'
+import { Grid, Fs } from '@/components'
 
-class PageNotFound extends React.PureComponent {
+class PageNotFoundRoute extends React.PureComponent {
 
 	render () {
 
@@ -10,9 +10,15 @@ class PageNotFound extends React.PureComponent {
 				<Helmet>
 					<meta name="prerender-status-code" content="404" />
 				</Helmet>
-				<Container>
-					Page not found...
-				</Container>
+				<Grid stacked>
+					<Grid.Cell>
+						<Grid.Content pad={2}>
+							<Fs variant="h2" tag="h2">Page Not Found</Fs>
+							<br />
+							<img src="https://media.giphy.com/media/1BXa2alBjrCXC/giphy.gif" />
+						</Grid.Content>
+					</Grid.Cell>
+				</Grid>
 			</>
 		)
 
@@ -20,8 +26,4 @@ class PageNotFound extends React.PureComponent {
 
 }
 
-export const routeConfig = {
-	path: '*'
-}
-
-export default PageNotFound
+export default PageNotFoundRoute
