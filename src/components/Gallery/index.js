@@ -24,21 +24,21 @@ class Slide extends React.PureComponent {
 class Gallery extends React.PureComponent {
 
 	static propTypes = {
-		className: PropTypes.string,
-		children: PropTypes.node
+		className: PropTypes.string
 	}
 
 	static Slide = Slide
 
 	render () {
-		const className = Classnames(styles.gallery, this.props.className)
+		const { className, ...props } = this.props
 		return (
-			<div className={className}>
-				<TinySlider
-					options={{ controls: false, navPosition: 'bottom' }}
-					children={this.props.children}
-				/>
-			</div>
+			<TinySlider
+				className={Classnames(
+					styles.gallery,
+					className
+				)}
+				{...props}
+			/>
 		)
 	}
 
