@@ -48,7 +48,7 @@ class ContactRoute extends React.PureComponent {
 							{(Mq) => (
 								<Grid stacked={!Mq.large}>
 									<Cell
-										title="Tasting Room"
+										title="Distribution"
 										body={(
 											<p>
 												Please contact:<br />
@@ -58,7 +58,7 @@ class ContactRoute extends React.PureComponent {
 										)}
 									/>
 									<Cell
-										title="Where to Buy"
+										title="Tasting Room"
 										body={(
 											<p>
 												200 W. 12TH ST, UNIT# D53<br />
