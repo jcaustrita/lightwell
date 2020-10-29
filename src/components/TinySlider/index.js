@@ -29,6 +29,7 @@ class TinySlider extends React.PureComponent {
 		this.$slider = tns({
 			container: this.$el,
 			mouseDrag: true,
+			preventScrollOnTouch: 'auto',
 			speed: 500,
 			controls: false,
 			navPosition: 'bottom',
