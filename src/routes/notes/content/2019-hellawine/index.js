@@ -14,13 +14,14 @@ export default {
 			</p>
 			<p>
 				<strong>WHERE</strong><br />
-				<a href="https://g.page/lightwellsurvey?share" target="_blank">Lightwell Survey Winery & Tasting Room</a><br />
+				Lightwell Survey Winery & Tasting Room<br />
 				200 W 12TH ST, UNIT# D53<br />
 				Waynesboro, VA 22980<br />
+				<a href="https://g.page/lightwellsurvey?share" target="_blank">Directions</a>
 			</p>
 			<p>
 				<strong>ACCOMODATIONS</strong><br />
-				Rooms held under Lightwell Survey at <a href="https://www.wyndhamhotels.com/days-inn/waynesboro-virginia/days-inn-waynesboro-va/overview" target="_blank">The Days Inn of Waynesboro, 2060 Rosser Ave, Waynesboro, VA 22980</a>
+				Rooms held under Lightwell Survey at The Days Inn of Waynesboro, 2060 Rosser Ave, Waynesboro, VA 22980
 			</p>
 			<p>
 				<strong>WHAT TO BRING?</strong><br />
