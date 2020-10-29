@@ -72,7 +72,7 @@ class ContactRoute extends React.PureComponent {
 										body={(
 											<p>
 												Questions about your order?<br />
-												<a href="#">Shipping + Returns</a><br />
+												<Link to="/legal">Shipping + Returns</Link><br />
 												<Link to="/legal">Legal</Link>
 											</p>
 										)}
