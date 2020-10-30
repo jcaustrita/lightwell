@@ -1,5 +1,6 @@
 import { React } from '@/vendor'
-import { Fs } from '@/components'
+import Fs from '@/components/Fs'
+import Button from '@/components/Button'
 import Graphic from './Graphic'
 import styles from './styles.module.scss'
 
@@ -38,10 +39,10 @@ class MailingList extends React.PureComponent {
 							tabIndex="-1"
 						/>
 					</span>
-					<input
+					<Button
 						type="submit"
 						className={styles.submit}
-						value="Subscribe"
+						children="Subscribe"
 					/>
 				</form>
 			</div>
