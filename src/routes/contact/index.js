@@ -58,11 +58,11 @@ class ContactRoute extends React.PureComponent {
 										)}
 									/>
 									<Cell
-										title="Tasting Room"
+										title="Shedule a Tasting"
 										body={(
 											<p>
-												200 W. 12TH ST, UNIT# D53<br />
-												Waynesboro, VA. 22980<br />
+												Tastings by appointment only.<br />
+												Contact us for availability.<br />
 												<a href="mailto:wines@lightwellsurvey.com">wines@lightwellsurvey.com</a>
 											</p>
 										)}
@@ -73,7 +73,7 @@ class ContactRoute extends React.PureComponent {
 											<p>
 												Questions about your order?<br />
 												<Link to="/legal">Shipping + Returns</Link><br />
-												<Link to="/legal">Legal</Link>
+												<Link to="/legal">Legal Stuff</Link>
 											</p>
 										)}
 									/>
