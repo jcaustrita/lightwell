@@ -31,18 +31,16 @@ class Gallery extends React.PureComponent {
 	render () {
 		const { className, ...props } = this.props
 		return (
-			<TinySlider
-				className={Classnames(
-					styles.gallery,
-					className
-				)}
-				children={
-					Object.values(images).map((src) => (
-						<Slide src={src} key={src} />
-					))
-				}
-				{...props}
-			/>
+			<TinySlider className={Classnames(styles.gallery, className)} {...props}>
+				<Slide src={require('./images/tasting.jpg')} />
+				<Slide src={require('./images/tasting-room.jpg')} />
+				<Slide src={require('./images/hellawine.jpg')} />
+				<Slide src={require('./images/happy-couple.jpg')} />
+				<Slide src={require('./images/og-bottles.jpg')} />
+				<Slide src={require('./images/tasting-bar.jpg')} />
+				<Slide src={require('./images/tasting-chatter.jpg')} />
+				<Slide src={require('./images/pinko.jpg')} />
+			</TinySlider>
 		)
 	}
 
