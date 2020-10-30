@@ -40,20 +40,24 @@ class IndexRoute extends React.PureComponent {
 												<Grid.Content className={styles.shopCarouselWrapper}>
 													<ShopCarousel>
 														<ShopCarousel.Slide
-															image={require('./currentReleases/2017-hintermen@2x.jpg')}
-															title="2017 Hintermen"
+															image={require('./currentReleases/2018-hintermen@2x.jpg')}
+															title="2018 Hintermen"
 														/>
 														<ShopCarousel.Slide
-															image={require('./currentReleases/2017-horses@2x.jpg')}
-															title="2017 Goodbye Horses"
+															image={require('./currentReleases/2018-horses@2x.jpg')}
+															title="2018 Goodbye Horses"
 														/>
 														<ShopCarousel.Slide
-															image={require('./currentReleases/2017-idiots@2x.jpg')}
-															title="2017 Los Idiots"
+															image={require('./currentReleases/2018-idiots@2x.jpg')}
+															title="2018 Los Idiots"
 														/>
 														<ShopCarousel.Slide
-															image={require('./currentReleases/2017-wolves@2x.jpg')}
-															title="2017 The Weird Ones Are Wolves"
+															image={require('./currentReleases/2018-wolves@2x.jpg')}
+															title="2018 The Weird Ones Are Wolves"
+														/>
+														<ShopCarousel.Slide
+															image={require('./currentReleases/2019-strange-days@2x.jpg')}
+															title="2019 Strange Days"
 														/>
 													</ShopCarousel>
 												</Grid.Content>
