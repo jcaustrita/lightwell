@@ -7,7 +7,8 @@ class NoteArticle extends React.PureComponent {
 	static propTypes = {
 		title: PropTypes.string,
 		image: PropTypes.string,
-		body: PropTypes.element
+		body: PropTypes.element,
+		cta: PropTypes.element
 	}
 
 	render () {
@@ -21,6 +22,11 @@ class NoteArticle extends React.PureComponent {
 					<Fs variant="h1" tag="h1" align="center">{this.props.title}</Fs>
 					{this.props.body}
 				</Fs>
+				{this.props.cta && (
+					<div className={styles.cta}>
+						{this.props.cta}
+					</div>
+				)}
 			</div>
 		)
 	}

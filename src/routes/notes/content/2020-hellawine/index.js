@@ -1,4 +1,5 @@
 import { React } from '@/vendor'
+import { Button } from '@/components'
 
 export default {
 	title: '2020 Hellawine',
@@ -34,7 +35,7 @@ export default {
 				<strong>QUESTIONS/CONTACT</strong><br />
 				<a href="mailto:wines@lightwellsurvey.com">wines@lightwellsurvey.com</a>
 			</p>
-
 		</>
-	)
+	),
+	cta: <Button.Link to="/shop">Buy Now</Button.Link>
 }
