@@ -37,5 +37,5 @@ export default {
 			</p>
 		</>
 	),
-	cta: <Button.Link to="/shop">Buy Now</Button.Link>
+	cta: <Button.Link to="/shop">Shop Wines</Button.Link>
 }
