@@ -31,9 +31,7 @@ class ShopRoute extends React.PureComponent {
 					body={
 						<Grid>
 							<Grid.Cell>
-								<Grid.Content pad={2}>
-									<VinoFrame />
-								</Grid.Content>
+								<VinoFrame />
 							</Grid.Cell>
 						</Grid>
 
