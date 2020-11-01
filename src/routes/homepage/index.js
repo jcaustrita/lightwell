@@ -89,7 +89,7 @@ class IndexRoute extends React.PureComponent {
 															<Grid.Cell>
 																<LinkCell
 																	to="/notes/2020-hellawine"
-																	pre={<Img src={require('./10-31-2020@2x.png')} />}
+																	pre={<Img src={require('./note@2x.png')} />}
 																	primary="Hellawine Release Party"
 																	light
 																/>
@@ -119,8 +119,8 @@ class IndexRoute extends React.PureComponent {
 											<Grid.Cell>
 												<LinkCell
 													to="/visit"
-													pre="Coming 2020"
-													primary="Tasting Room"
+													pre="Tasting Room"
+													primary="Book a Tasting"
 												/>
 											</Grid.Cell>
 											{Mq.large && (
@@ -138,7 +138,7 @@ class IndexRoute extends React.PureComponent {
 											<Grid.Cell>
 												<LinkCell
 													to="/shop"
-													pre="The Cellar"
+													pre="Our Cellar"
 													primary="Buy Wine"
 													light
 												/>
