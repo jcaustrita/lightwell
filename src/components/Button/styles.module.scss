@@ -1,6 +1,9 @@
 .button {
-	height:60px; border:none; padding:16px 40px 19px 40px; outline:none; font-size:14px; line-height:1.2; appearance:none; border-radius:0; transition:all .3s; background:#000; color:#fff; text-transform:uppercase; cursor:pointer;
+	display:inline-block; height:60px; border:none; padding:0 40px; outline:none; font-size:14px; line-height:60px; appearance:none; border-radius:0; transition:all .3s; background:#000; color:#fff; text-transform:uppercase; cursor:pointer;
 	&:hover {
 		background:#fff; color:#000;
+	}
+	:global(.screen-small) & {
+		display:block; width:100%;
 	}
 }
