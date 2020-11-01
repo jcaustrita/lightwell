@@ -38,7 +38,7 @@ class LegalRoute extends React.PureComponent {
 					<Cell
 						headline="Shipping"
 						body={
-							<p>Lightwell Survey orders ship frequently year-round. During the summer season, when the weather gets spicy,we typically stop all customer shipments until September once the weather is better suited for unfiltered wines. All orders will ship via Lightwell Survey's chosen courier. Once shipped, you will receive a confirmation email outlining the details of your delicious order. Please contact Lightwell Survey if you have any questions about your order: <MailToLink /></p>
+							<p>Lightwell Survey orders ship frequently year-round. During the summer season, when the weather gets spicy, we typically stop all customer shipments until September once the weather is better suited for shipping unfiltered wines. All orders will ship via Lightwell Survey's chosen courier. Once shipped, you will receive a confirmation email outlining the details of your delicious order. Please contact Lightwell Survey if you have any questions about your order: <MailToLink /></p>
 						}
 					/>
 					<Cell
