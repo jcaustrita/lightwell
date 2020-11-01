@@ -1,4 +1,26 @@
-@import "./fonts/index.scss";
+@font-face {
+	font-family: 'Gin';
+	src:
+		url('https://jc-fonts.sfo2.cdn.digitaloceanspaces.com/Gin/Gin-Regular.woff2') format('woff2'),
+		url('https://jc-fonts.sfo2.cdn.digitaloceanspaces.com/Gin/Gin-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@each $name, $weight, $style in (
+	(Regular, 400, normal),
+	(Bold, 700, normal),
+	(RegularItalic, 400, italic),
+){
+	@font-face {
+		font-family: 'Pitch';
+		src:
+			url('https://jc-fonts.sfo2.cdn.digitaloceanspaces.com/Pitch/Pitch-#{$name}.woff2') format('woff2'),
+			url('https://jc-fonts.sfo2.cdn.digitaloceanspaces.com/Pitch/Pitch-#{$name}.woff') format('woff');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
 
 :root {
 	--grid-gutter: 10px;
