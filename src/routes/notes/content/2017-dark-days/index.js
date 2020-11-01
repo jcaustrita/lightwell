@@ -1,4 +1,5 @@
 import { React } from '@/vendor'
+import { Button } from '@/components'
 
 export default {
 	title: '2017 Dark Days',
@@ -26,5 +27,6 @@ export default {
 				Malic Acid: {'<'}2.83 g/L
 			</p>
 		</>
-	)
+	),
+	cta: <Button.Link to="/shop">Shop Wines</Button.Link>
 }

@@ -1,4 +1,5 @@
 import { React } from '@/vendor'
+import { Button } from '@/components'
 
 export default {
 	title: '2019 Hellawine',
@@ -37,5 +38,6 @@ export default {
 			</p>
 
 		</>
-	)
+	),
+	cta: <Button.Link to="/shop">Shop Wines</Button.Link>
 }
