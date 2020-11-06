@@ -2,7 +2,7 @@ import { React } from '@/vendor'
 import { Button } from '@/components'
 
 export default {
-	title: '2020 Hellawine',
+	title: '2020 Hellawine Release Party',
 	date: '2020-10-01',
 	image: require('./2020-hellawine@2x.jpg'),
 	body: (
