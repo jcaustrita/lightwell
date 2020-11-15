@@ -7,18 +7,24 @@ export default {
 	image: require('./2018-hintermen@2x.jpg'),
 	body: (
 		<>
-			<p>Comin' soon...</p>
+			<p>Full tasting notes comin' soon... A blend of 59% Riesling and 41% Petit Manseng. 93 cases produced.</p>
 			<p>
 				<strong>FRUIT SOURCES</strong><br />
-				N/A
+				Oxeye Vineyard in Swoope, grower John Kiers; Rosedale Vineyard in Stuarts Draft, grower Bill Tonkins
 			</p>
 			<p>
 				<strong>WINEMAKING</strong><br />
-				N/A
+				Stomped whole clusters for a short, soft maceration before whole cluster pressing both varieties together. A light settling to retain most of the juice lees and then co-fermented in neutral Hungarian and French oak 500L barrels. Aged for 14 months on the lees. Bottled 12/12/19 with no fining or tartrate stabilization.
 			</p>
 			<p>
 				<strong>CHEMISTRY</strong><br />
-				N/A
+				pH: 3.06<br />
+				TA: 6.6<br />
+				Free SO2 at bottling: 22<br />
+				Alcohol: 12.1% abv<br />
+				G/F: 2.5 g/L<br />
+				Malic Acid: 0.11 g/L<br />
+				Acetic acid at bottling: 0.54 g/L
 			</p>
 		</>
 	),
