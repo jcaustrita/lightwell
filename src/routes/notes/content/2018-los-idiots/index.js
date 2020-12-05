@@ -7,7 +7,7 @@ export default {
 	image: require('./2018-los-idiots@2x.jpg'),
 	body: (
 		<>
-			<p>Full tasting notes comin' soon... A blend of 59% Blaufränkisch, 41% Riesling. 51 cases produced.</p>
+			<p>A blend of 59% Blaufränkisch and 41% Riesling. Fresh red plum flesh creeps out of the glass, a lingering smokiness is omnipresent. The lavender and aloe on the nose leave you both confused and excited. No one's really sure what the hell is going on, but one thing is for certain, it ain't no clown. Full of elegance, structure and silky tannins, this juice is as fresh as it is powerful. 51 cases produced.</p>
 			<p>
 				<strong>FRUIT SOURCES</strong><br />
 				100% Mount Airy Vineyard in Fort Defiance, growers Tim and Ben Jordan

@@ -7,7 +7,7 @@ export default {
 	image: require('./2018-hintermen@2x.jpg'),
 	body: (
 		<>
-			<p>Full tasting notes comin' soon... A blend of 59% Riesling and 41% Petit Manseng. 93 cases produced.</p>
+			<p>A blend of 59% Riesling and 41% Petit Manseng. Break out the summer dresses and gingham, this one’s a marigold in a glass. On first glance, the golden straw and silvery flecks resemble sunlight. The vanilla and lemon curd imply a deep wine, but you can also smell the wet river rocks and crisp chunky acidity. The palate is giving and lush while being full of vibrant, energetic acid. It's so tart it makes you squint, but the fruit is so generous it hardly hurts as much as you think. 93 cases produced.</p>
 			<p>
 				<strong>FRUIT SOURCES</strong><br />
 				Oxeye Vineyard in Swoope, grower John Kiers; Rosedale Vineyard in Stuarts Draft, grower Bill Tonkins

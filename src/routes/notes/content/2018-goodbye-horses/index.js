@@ -7,7 +7,7 @@ export default {
 	image: require('./2018-goodbye-horses@2x.jpg'),
 	body: (
 		<>
-			<p>A blend of 91% Riesling and 9% Petit Manseng. Tinsley, silver flecked and bracing with acidity this '18 is the sharpest of the batch. Crisp green apple collides with supple pear juice and lush wildflowers. Its elegant and twitchy at the same time. Vibrant and full of acidic energy, this wine should last a few in the cellar. 67 cases produced.</p>
+			<p>A blend of 91% Riesling and 9% Petit Manseng. Tinsley, silver flecked and bracing with acidity this '18 is the sharpest of the batch. Crisp green apple collides with supple pear juice and lush wildflowers. It is elegant and twitchy at the same time. Vibrant and full of acidic energy, this wine should last a few in the cellar. 93 cases produced.</p>
 			<p>
 				<strong>FRUIT SOURCES</strong><br />
 				Oxeye Vineyard in Swoope, grower John Kiers; Rosedale Vineyard in Stuarts Draft, grower Bill Tonkins; Mount Airy Vineyard in Fort Defiance, grower is Tim and Ben Jordan
