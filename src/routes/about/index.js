@@ -49,7 +49,7 @@ class AboutRoute extends React.PureComponent {
 									role="The Baby Kisser"
 									body={
 										<p>
-											Raised in the DC suburbs, Sebastian Zutant attended the College of Charleston before returning to the District to navigate his way through the city’s restaurant ranks, including a stint at Nectar before opening Komi, overhauling the beverage program at Rasika, spearheading the wine list at Proof, opening Red Hen in 2013 and All Purpose in 2016. As the former lead singer for SuperKid, his real-life experiences have tainted him in a manner that explains a lot. As a disappointed Bills fan, Sebastian lives in Brookland, D.C. where he opened up the neighborhood French spot, Primrose, with his wife and two Kids.
+											Raised in the DC suburbs, Sebastian Zutant attended the College of Charleston before returning to the District to navigate his way through the city’s restaurant ranks, including a stint at Nectar before opening Komi, overhauling the beverage program at Rasika, spearheading the wine list at Proof, opening Red Hen in 2013 and All Purpose in 2016. As the former lead singer for SuperKid, his real-life experiences have tainted him in a manner that explains a lot. As a disappointed Bills fan, Sebastian lives in D.C. where he opened up the neighborhood French spot, <a href="https://www.primrosedc.com">Primrose</a>.
 										</p>
 									}
 								/>
@@ -94,7 +94,7 @@ class AboutRoute extends React.PureComponent {
 									role="The Big Taco"
 									body={
 										<p>
-											An aspiring dancer from the flats of California and first mate of the Juno, Julian Caustrita got his start as a street magician after a stint at California Poly Tech. Due to a tragic accident involving a giraffe and a pumpkin he decided to pivot his skills and focus on branding and UX design in California. As the Creative Director of Active Ingredients in Marin County, he has worked with loads of agencies to create lasting digital impressions that leave most questioning what he can’t do. Julian lives in and rarely leaves Sausalito with his fiancé, puppy Meatball, bocce trophies, and an overflowing beer collection.
+											An aspiring dancer from the flats of California and first mate of the Juno, Julian Caustrita got his start as a street magician after a stint at California Poly Tech. Due to a tragic accident involving a giraffe and a pumpkin he decided to pivot his skills and focus on branding, package design, and user experiences over in Cali. As a Creative Director by trade, he's worked with loads of agencies to create lasting strategic impressions that leave most questioning what he can’t do. Julian lives in and rarely leaves Sausalito with his fiancé, puppy Meatball, bocce trophies, and an overflowing beer collection.
 										</p>
 									}
 								/>
