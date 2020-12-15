@@ -88,9 +88,9 @@ class IndexRoute extends React.PureComponent {
 														<Grid stacked>
 															<Grid.Cell>
 																<LinkCell
-																	to="/shop"
+																	to="/notes"
 																	pre={<Img src={require('./notes@2x.png')} />}
-																	primary="Holidaze 2018 Series Gift Pack"
+																	primary="2018 Tasting Notes Now Available"
 																	light
 																/>
 															</Grid.Cell>
