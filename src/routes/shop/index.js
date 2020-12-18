@@ -22,7 +22,7 @@ class ShopRoute extends React.PureComponent {
 									headline="Free Ground Shipping"
 									callout={{
 										image: require('./note@2x.png'),
-										text: '3 bottle minimum'
+										text: 'Shipping will begin first week of January. 3 bottle minimum.'
 									}}
 								/>
 							}
