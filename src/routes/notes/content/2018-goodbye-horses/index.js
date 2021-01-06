@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2018 Goodbye Horses',
 	date: '2020-11-11',
-	image: require('./2018-goodbye-horses@2x.jpg'),
+	image: require('./2018-goodbye-horses@2x.png'),
 	body: (
 		<>
 			<p>A blend of 91% Riesling and 9% Petit Manseng. Tinsley, silver flecked and bracing with acidity this '18 is the sharpest of the batch. Crisp green apple collides with supple pear juice and lush wildflowers. It is elegant and twitchy at the same time. Vibrant and full of acidic energy, this wine should last a few in the cellar. 93 cases produced.</p>

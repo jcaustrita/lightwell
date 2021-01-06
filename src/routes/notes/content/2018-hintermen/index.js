@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2018 Hintermen',
 	date: '2020-11-11',
-	image: require('./2018-hintermen@2x.jpg'),
+	image: require('./2018-hintermen@2x.png'),
 	body: (
 		<>
 			<p>A blend of 59% Riesling and 41% Petit Manseng. Break out the summer dresses and gingham, this one’s a marigold in a glass. On first glance, the golden straw and silvery flecks resemble sunlight. The vanilla and lemon curd imply a deep wine, but you can also smell the wet river rocks and crisp chunky acidity. The palate is giving and lush while being full of vibrant, energetic acid. It's so tart it makes you squint, but the fruit is so generous it hardly hurts as much as you think. 93 cases produced.</p>
