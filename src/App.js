@@ -24,7 +24,8 @@ class App extends React.PureComponent {
 		return {
 			small: 'screen and (max-width: 767px)',
 			medium: 'screen and (min-width: 768px) and (max-width: 999px)',
-			large: 'screen and (min-width: 1180px)'
+			large: 'screen and (min-width: 1180px)',
+			print: 'print'
 		}
 	}
 
@@ -40,51 +41,59 @@ class App extends React.PureComponent {
 				/>
 				<ScrollToTop />
 				<Mq.Provider config={this.breakpoints}>
-					<Helmet titleTemplate="%s :: Lightwell Survey Wines" />
-					<OverlayNav active={this.state.overlayNavActive} />
-					<Grid.Container>
-						<Grid flex={0}>
-							<Grid.Cell>
-								<Header
-									burger={
-										<Header.Burger
-											active={this.state.overlayNavActive}
-											onClick={() => {
-												this.setState({
-													overlayNavActive: !this.state.overlayNavActive
-												})
-											}}
+					{(Mq) => (
+						<>
+							<Helmet titleTemplate="%s :: Lightwell Survey Wines" />
+							<OverlayNav active={this.state.overlayNavActive} />
+							<Grid.Container>
+								<Grid flex={0}>
+									<Grid.Cell>
+										<Header
+											burger={
+												<Header.Burger
+													active={this.state.overlayNavActive}
+													onClick={() => {
+														this.setState({
+															overlayNavActive: !this.state.overlayNavActive
+														})
+													}}
+												/>
+											}
 										/>
-									}
-								/>
-							</Grid.Cell>
-						</Grid>
-						<Grid>
-							<Grid.Cell>
-								<Routes>
-									<Route path="*" element={<PageNotFoundRoute />} />
-									<Route path="/" element={<HomepageRoute />} />
-									<Route path="/shop" element={<ShopRoute />} />
-									<Route path="/about" element={<AboutRoute />} />
-									<Route path="/visit" element={<VisitRoute />} />
-									<Route path="/notes" element={<NotesRoute />} />
-									<Route path="/notes/:slug" element={<NotesSlugRoute />} />
-									<Route path="/contact" element={<ContactRoute />} />
-									<Route path="/legal" element={<LegalRoute />} />
-								</Routes>
-							</Grid.Cell>
-						</Grid>
-						<Grid flex={0}>
-							<Grid.Cell>
-								<Subscribe />
-							</Grid.Cell>
-						</Grid>
-						<Grid flex={0}>
-							<Grid.Cell>
-								<Footer />
-							</Grid.Cell>
-						</Grid>
-					</Grid.Container>
+									</Grid.Cell>
+								</Grid>
+								<Grid>
+									<Grid.Cell>
+										<Routes>
+											<Route path="*" element={<PageNotFoundRoute />} />
+											<Route path="/" element={<HomepageRoute />} />
+											<Route path="/shop" element={<ShopRoute />} />
+											<Route path="/about" element={<AboutRoute />} />
+											<Route path="/visit" element={<VisitRoute />} />
+											<Route path="/notes" element={<NotesRoute />} />
+											<Route path="/notes/:slug" element={<NotesSlugRoute />} />
+											<Route path="/contact" element={<ContactRoute />} />
+											<Route path="/legal" element={<LegalRoute />} />
+										</Routes>
+									</Grid.Cell>
+								</Grid>
+								{!Mq.print && (
+									<>
+										<Grid flex={0}>
+											<Grid.Cell>
+												<Subscribe />
+											</Grid.Cell>
+										</Grid>
+										<Grid flex={0}>
+											<Grid.Cell>
+												<Footer />
+											</Grid.Cell>
+										</Grid>
+									</>
+								)}
+							</Grid.Container>
+						</>
+					)}
 				</Mq.Provider>
 			</BrowserRouter>
 		)

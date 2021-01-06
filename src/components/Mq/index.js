@@ -39,7 +39,7 @@ class Provider extends React.PureComponent {
 
 	render () {
 		return (
-			<Context.Provider value={this.state} children={this.props.children} />
+			<Context.Provider value={this.state} children={this.props.children(this.state)} />
 		)
 	}
 

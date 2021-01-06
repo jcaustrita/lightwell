@@ -1,7 +1,10 @@
 .image {
-	display:block; margin:0 auto;
+	display:block; margin:0 auto 16px;
 }
 
 .cta {
 	margin-top:64px; text-align:center;
+	@media print {
+		display:none;
+	}
 }

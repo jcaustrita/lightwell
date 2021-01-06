@@ -63,3 +63,13 @@ a {
 img {
 	display:block; max-width:100%; height:auto;
 }
+
+@media print {
+	:root {
+		--body-color: #000;
+		--link-color: #000;
+	}
+	* {
+		background:none !important;
+	}
+}
