@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2019 Strange Days',
 	date: '2020-02-14',
-	image: require('./2019-strange-days@2x.jpg'),
+	image: require('./2019-strange-days@2x.png'),
 	body: (
 		<>
 			<p>A blend of 65% Pinot Gris, 15% Blaufränkisch, 10% Petit Manseng, and 10% Riesling. An homage to summer, a longing for the past, or perhaps memories of better days calling across the water. Beware the danger in nostalgia, however, as a beckoning mermaid is sometimes a menacing siren hiding a deadly hand. Instead, we look forward and beat against the waves, remembering a smooth sea never made a skilled sailor.</p>

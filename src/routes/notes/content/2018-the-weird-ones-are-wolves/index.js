@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2018 The Weird Ones Are Wolves',
 	date: '2020-11-11',
-	image: require('./2018-the-weird-ones-are-wolves@2x.jpg'),
+	image: require('./2018-the-weird-ones-are-wolves@2x.png'),
 	body: (
 		<>
 			<p>A blend of 87% Cabernet Franc, 6% Petit Manseng, 4% Riesling, and 3% Blaufränkisch. Dark, a lot darker than what I expected given the vintage. The nose is like one of those chocolate covered cherries my mom used to eat. The fruit is so sweet it needs the chalky,  ashiness and lavender accents to balance it. The smokey, wet charcoal mid palate nicely complemented by the dried rose petal finish. There’s an earthy depth that rounds out the finish, yet still leaves you with sweet red/black fruit. 152 cases produced.</p>
