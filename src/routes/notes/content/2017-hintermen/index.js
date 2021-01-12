@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2017 Hintermen',
 	date: '2019-11-01',
-	image: require('./2017-hintermen@2x.jpg'),
+	image: require('./2017-hintermen@2x.png'),
 	body: (
 		<>
 			<p>A blend of 72% Riesling and 28% Petit Manseng. If we had acid like this is highschool, we would all be better off! It’s like we crushed up sunlight, squirted a lime on it, then a dash of river stones, and there you have it. Bright bristling and so well balanced. This one will last a lifetime. 100 cases produced.</p>

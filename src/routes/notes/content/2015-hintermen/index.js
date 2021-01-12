@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2015 Hintermen',
 	date: '2017-11-01',
-	image: require('./2015-hintermen@2x.jpg'),
+	image: require('./2015-hintermen@2x.png'),
 	body: (
 		<>
 			<p>A blend of 63% Riesling and 37% Petit Manseng. A buffalo hunt takes its party far off the beaten path into an uncharted, snow-covered forest. A moonlit clearing reveals a gnarled, once fruit-bearing tree, sheltering the elusive target. And in that moment they realize – despite the thrill of the hunt – they were chasing something else all along.</p>

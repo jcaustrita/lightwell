@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2016 The Weird Ones Are Wolves',
 	date: '2018-11-01',
-	image: require('./2016-the-weird-ones-are-wolves@2x.jpg'),
+	image: require('./2016-the-weird-ones-are-wolves@2x.png'),
 	body: (
 		<>
 			<p>A blend of 97% Cabernet Franc, 2% Petit Manseng, and 1% Riesling. It’s hard to stay a lone wolf for long, so you’ve got to stay looking over your shoulder as the weird ones are out there. It could be time to show a little teeth and let them know your bark isn’t worse than your bite. There are always new wolves in town equally hungry and equally weird. Don’t be afraid to let ‘em know who leads the pack.</p>

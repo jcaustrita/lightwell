@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2015 Goodbye Horses',
 	date: '2017-11-01',
-	image: require('./2015-goodbye-horses@2x.jpg'),
+	image: require('./2015-goodbye-horses@2x.png'),
 	body: (
 		<>
 			<p>100% Riesling. Wild horses are unbridled and fiercely independent, but still prefer to exist within a group. They’re a powerful embodiment of the natural conflict between beauty and violence, even in the most serene environments.</p>

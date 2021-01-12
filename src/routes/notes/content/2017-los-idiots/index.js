@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2017 Los Idiots',
 	date: '2019-11-01',
-	image: require('./2017-los-idiots@2x.jpg'),
+	image: require('./2017-los-idiots@2x.png'),
 	body: (
 		<>
 			<p>A blend of 59% Syrah and 41% Riesling. I said DAMN thats juicy man! Wild Ripe fruits bouncing all over this banger. The scent is magical, somewhere between heaven and hell, it`s hard to know which is better. The richness and baby fat round out the mouthfeel without being cloying. This is a day drinker, a Sunday afternoon, a stroll in the park, but don’t be fooled, it’ll get ya hooked, and a second bottle will take you out all night. 46 cases produced.</p>

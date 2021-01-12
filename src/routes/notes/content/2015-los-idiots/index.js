@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2015 Los Idiots',
 	date: '2017-11-01',
-	image: require('./2015-los-idiots@2x.jpg'),
+	image: require('./2015-los-idiots@2x.png'),
 	body: (
 		<>
 			<p>A blend of 51% Syrah and 49% Riesling. This is all about going for it. Following your passion even if you have no experience doing what your heart’s pulling for. Everyone’s going to look like a clown the first time they try something new, but after all, clowns are – in a way – professionals. And those big shoes come in handy when stomping grapes.</p>

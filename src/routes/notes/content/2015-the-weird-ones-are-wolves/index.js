@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2015 The Weird Ones Are Wolves',
 	date: '2017-11-01',
-	image: require('./2015-the-weird-ones-are-wolves@2x.jpg'),
+	image: require('./2015-the-weird-ones-are-wolves@2x.png'),
 	body: (
 		<>
 			<p>A blend of 97% Cabernet Franc and 3% Petit Manseng. This one’s for the weirdos. For the wolves in wolves’ clothings (paired with the occasional trench coat). For the ones who feel more comfortable walking through a dark alley than a bustling city street. After all, a wolf doesn’t concern itself with the opinions of sheep.</p>

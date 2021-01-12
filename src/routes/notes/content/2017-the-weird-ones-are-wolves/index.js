@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2017 The Weird Ones Are Wolves',
 	date: '2019-11-01',
-	image: require('./2017-the-weird-ones-are-wolves@2x.jpg'),
+	image: require('./2017-the-weird-ones-are-wolves@2x.png'),
 	body: (
 		<>
 			<p>A blend of 90% Cabernet Franc, 4% Syrah, 3% Riesling, and 3% Petit Manseng. The most savage vintage yet. It’s deep and bloody, dripping with meaty fruit. The broad shoulders will help it age gracefully with time, but this is no brute. Its elegant baking spice and dried floral components compliment its power. 232 cases produced.</p>

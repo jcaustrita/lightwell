@@ -5,7 +5,7 @@ import { Button } from '@/components'
 export default {
 	title: '2018 Dark Days',
 	date: '2019-02-14',
-	image: require('./2018-dark-days@2x.jpg'),
+	image: require('./2018-dark-days@2x.png'),
 	body: (
 		<>
 			<p>100% Blaufränkisch Rosé. Warm weather was made for escaping to the water and rosé was always made light pink, but the unexpected is always lurking just under the surface. There’s never much you can do when it rears it’s head, pops out and grabs you except drink up. When things don’t seem normal, that’s where the real adventure lives.</p>

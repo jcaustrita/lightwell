@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2016 Los Idiots',
 	date: '2018-11-01',
-	image: require('./2016-los-idiots@2x.jpg'),
+	image: require('./2016-los-idiots@2x.png'),
 	body: (
 		<>
 			<p>A blend of 55% Syrah and 45% Riesling. Another year older, another year wiser? With more grapes than ever heading to the press it’s hard for a clown to get any shut eye nowadays. Production marches on to the beat of a different drum and los idiots continue to think outside the box about what’s inside the barrel. Sometimes it’s better to listen to your gut instead of your head.</p>

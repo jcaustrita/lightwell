@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2017 Dark Days',
 	date: '2018-02-14',
-	image: require('./2017-dark-days@2x.jpg'),
+	image: require('./2017-dark-days@2x.png'),
 	body: (
 		<>
 			<p>Summer was made for escaping, trying to put aside worry and sticking with the same annual traditions like a family lake trip or the usual pale pink wine. That is until a typical summer day is brought to a halt by something unexpected, unidentified and darker. Darker Days was made to shake things up and bring rosé into a different light.</p>

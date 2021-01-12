@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2017 Goodbye Horses',
 	date: '2019-11-01',
-	image: require('./2017-goodbye-horses@2x.jpg'),
+	image: require('./2017-goodbye-horses@2x.png'),
 	body: (
 		<>
 			<p>100% Riesling. “I’m back bitches!” OhhhWEEEEE That’s on the move. The acid is nervous with this one. Peel your wig back acid, y’all.  Zingy, Zesty, Zippy and all the other Z words. This wine sings, it screams, it breaks glasses. Like crunching hippie crystals in your teeth, it will keep you craving more. 91 cases produced.</p>

@@ -4,7 +4,7 @@ import { Button } from '@/components'
 export default {
 	title: '2016 Hintermen',
 	date: '2018-11-01',
-	image: require('./2016-hintermen@2x.jpg'),
+	image: require('./2016-hintermen@2x.png'),
 	body: (
 		<>
 			<p>A blend of 72% Riesling and 28% Petit Manseng. Has the hunter already become the hunted? As the hintermen march on the untamed wild pushes back as the once peaceful scenery turns territorial towards the uninvited travelers and the wildlife begins to come to life. The risk and reward of these uncharted lands might both be too great to turn back now.</p>
