@@ -14,7 +14,7 @@ export default {
 			</p>
 			<p>
 				<strong>WINEMAKING</strong><br />
-				100% whole cluster fermentation on Vidal, Blaufrankisch, and Traminette, no SO2 on the fruit, on the skins for twelve days, semi carbonic and then pressed and combined with the Chambourcin and the Petit Mandseng which were whole cluster pressed. It finished primary and malo in neutral barrels and aged on lees until bottling. Bottled unfiltered on 4/20/21 with a total of 30ppm of added SO2.
+				100% whole cluster fermentation on Vidal, Blaufrankisch, and Traminette, no SO2 on the fruit, on the skins for twelve days, semi carbonic and then pressed and combined with the Chambourcin and the Petit Mandseng which were whole cluster pressed. It finished primary and malo in neutral barrels and aged on lees until bottling.
 			</p>
 			<p>
 				<strong>CHEMISTRY</strong><br />
