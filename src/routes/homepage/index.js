@@ -48,20 +48,20 @@ class IndexRoute extends React.PureComponent {
 															title="2020 Knight Moves (Coming Soon)"
 														/>
 														<ShopCarousel.Slide
-															image={require('./currentReleases/2018-hintermen@2x.jpg')}
-															title="2018 Hintermen"
+															image={require('./currentReleases/2018-wolves@2x.jpg')}
+															title="2018 The Weird Ones Are Wolves"
 														/>
 														<ShopCarousel.Slide
-															image={require('./currentReleases/2018-horses@2x.jpg')}
-															title="2018 Goodbye Horses"
+															image={require('./currentReleases/2018-hintermen@2x.jpg')}
+															title="2018 Hintermen"
 														/>
 														<ShopCarousel.Slide
 															image={require('./currentReleases/2018-idiots@2x.jpg')}
 															title="2018 Los Idiots"
 														/>
 														<ShopCarousel.Slide
-															image={require('./currentReleases/2018-wolves@2x.jpg')}
-															title="2018 The Weird Ones Are Wolves"
+															image={require('./currentReleases/2018-horses@2x.jpg')}
+															title="2018 Goodbye Horses"
 														/>
 													</ShopCarousel>
 												</Grid.Content>
