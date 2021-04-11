@@ -19,8 +19,8 @@ class VisitRoute extends React.PureComponent {
 										<Fs variant="h2" tag="h2">Monthly Tastings</Fs>
 										<p>Join us in Waynesboro, VA (the Old Mill) for a look into our signature approach to both winemaking and frienship. We're currently doing wine tastings once a month with parties no larger than 6 people, this includes non-tasters. We are very dog friendly. For questions, contact us at <a href="mailto:wines@lightwellsurvey.com">wines@lightwellsurvey.com</a> or contact <a href="mailto:cece@lightwellsurvey.com">Cece</a> directly.</p>
 										<p>
-											<a href="https://g.page/lightwellsurvey?share" target="_blank">200 W. 12TH ST, UNIT# D53</a><br />
-											<a href="https://g.page/lightwellsurvey?share" target="_blank">Waynesboro, VA. 22980</a><br />
+											200 W. 12TH ST, UNIT# D53<br />
+											Waynesboro, VA. 22980<br />
 										</p>
 										<p>
 											<a href="https://square.site/book/LQFV0SYD1EBKS/lightwell-survey-wines-waynesboro-va">Book a Tasting</a>

@@ -63,7 +63,7 @@ class ContactRoute extends React.PureComponent {
 											<p>
 												200 W. 12TH ST, UNIT# D53<br />
 												Waynesboro, VA. 22980<br />
-												<a href="mailto:wines@lightwellsurvey.com">Book a Tasting</a>
+												<a href="https://g.page/lightwellsurvey?share" target="_blank">Get Directions</a>
 											</p>
 										)}
 									/>
