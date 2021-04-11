@@ -51,19 +51,19 @@ class ContactRoute extends React.PureComponent {
 										title="Distribution"
 										body={(
 											<p>
-												Please contact:<br />
 												Williams Corner<br />
-												434.293.6082
+												<a href="https://www.williamscorner.com/merchants">Find Lightwell Survey Wines</a><br />
+												or Call 434.293.6082
 											</p>
 										)}
 									/>
 									<Cell
-										title="Shedule a Tasting"
+										title="Tasting Room"
 										body={(
 											<p>
-												Tastings by appointment only.<br />
-												Contact us for availability.<br />
-												<a href="mailto:wines@lightwellsurvey.com">wines@lightwellsurvey.com</a>
+												200 W. 12TH ST, UNIT# D53<br />
+												Waynesboro, VA. 22980<br />
+												<a href="mailto:wines@lightwellsurvey.com">Book a Tasting</a>
 											</p>
 										)}
 									/>
@@ -71,9 +71,9 @@ class ContactRoute extends React.PureComponent {
 										title="Support"
 										body={(
 											<p>
-												Questions about your order?<br />
-												<Link to="/legal">Shipping + Returns</Link><br />
-												<Link to="/legal">Legal Stuff</Link>
+												<a href="mailto:wines@lightwellsurvey.com">General Questions + Comments</a><br />
+												<a href="mailto:cece@lightwellsurvey.com">Tasting Room Inquiries</a><br />
+												<Link to="/legal">Shipping + Returns</Link>
 											</p>
 										)}
 									/>

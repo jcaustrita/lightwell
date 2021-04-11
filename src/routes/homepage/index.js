@@ -40,6 +40,14 @@ class IndexRoute extends React.PureComponent {
 												<Grid.Content className={styles.shopCarouselWrapper}>
 													<ShopCarousel>
 														<ShopCarousel.Slide
+															image={require('./currentReleases/2020-rose@2x.jpg')}
+															title="2020 Strange Hybrid Moments (Coming Soon)"
+														/>
+														<ShopCarousel.Slide
+															image={require('./currentReleases/2020-collab@2x.jpg')}
+															title="2020 Knight Moves (Coming Soon)"
+														/>
+														<ShopCarousel.Slide
 															image={require('./currentReleases/2018-hintermen@2x.jpg')}
 															title="2018 Hintermen"
 														/>
@@ -54,10 +62,6 @@ class IndexRoute extends React.PureComponent {
 														<ShopCarousel.Slide
 															image={require('./currentReleases/2018-wolves@2x.jpg')}
 															title="2018 The Weird Ones Are Wolves"
-														/>
-														<ShopCarousel.Slide
-															image={require('./currentReleases/2019-strange-days@2x.jpg')}
-															title="2019 Strange Days"
 														/>
 													</ShopCarousel>
 												</Grid.Content>
@@ -88,9 +92,10 @@ class IndexRoute extends React.PureComponent {
 														<Grid stacked>
 															<Grid.Cell>
 																<LinkCell
-																	to="/notes"
+																	to="/notes/2021-pinko-de-mayo-release-party"
 																	pre={<Img src={require('./notes@2x.png')} />}
-																	primary="2018 Tasting Notes Now Available"
+																	primary="2021 Pinko de Mayo Release Party
+"
 																	light
 																/>
 															</Grid.Cell>
