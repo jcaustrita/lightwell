@@ -52,7 +52,7 @@ class ContactRoute extends React.PureComponent {
 										body={(
 											<p>
 												Williams Corner<br />
-												<a href="https://www.williamscorner.com/merchants">Find Lightwell Survey Wines</a><br />
+												<a href="https://www.williamscorner.com/merchants" target="_blank">Find Lightwell Survey Wines</a><br />
 												or Call 434.293.6082
 											</p>
 										)}
