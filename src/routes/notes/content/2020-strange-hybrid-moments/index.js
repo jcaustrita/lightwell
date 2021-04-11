@@ -3,7 +3,7 @@ import { Button } from '@/components'
 
 export default {
 	title: '2020 Strange Hybrid Moments',
-	date: '2020-04-10',
+	date: '2021-04-10',
 	image: require('./2020-strange-hybrid-moments@2x.png'),
 	body: (
 		<>
