@@ -41,11 +41,11 @@ class IndexRoute extends React.PureComponent {
 													<ShopCarousel>
 														<ShopCarousel.Slide
 															image={require('./currentReleases/2020-rose@2x.jpg')}
-															title="2020 Strange Hybrid Moments (Coming Soon)"
+															title="2020 Strange Hybrid Moments"
 														/>
 														<ShopCarousel.Slide
 															image={require('./currentReleases/2020-collab@2x.jpg')}
-															title="2020 Knight Moves (Coming Soon)"
+															title="2020 Knight Moves"
 														/>
 														<ShopCarousel.Slide
 															image={require('./currentReleases/2018-wolves@2x.jpg')}
