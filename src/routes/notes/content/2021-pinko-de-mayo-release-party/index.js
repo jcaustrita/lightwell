@@ -28,7 +28,7 @@ export default {
 			</p>
 			<p>
 				<strong>ATTIRE</strong><br />
-				Let's be safe, and dress to impress with your best pink shirt, pants, shoes, hair or don't.
+				Let's be safe, and dress to impress with your best pink shirt, pink pants, pink shoes, pink hair or don't.
 			</p>
 			<p>
 				<strong>QUESTIONS/CONTACT</strong><br />
