@@ -7,7 +7,7 @@ export default {
 	image: require('./2020-strange-hybrid-moments@2x.png'),
 	body: (
 		<>
-			<p>A blend of 33% Vidal blanc, 22% Chambourcin, 21% Blaufränkisch, 17% Petit Manseng, and 7% Traminette. 275 cases produced.</p>
+			<p>A blend of 33% Vidal blanc, 22% Chambourcin, 21% Blaufränkisch, 17% Petit Manseng, and 7% Traminette. 275 cases produced. What an interesting color, a rose rim and a copper core. The scent is just as different. Sweet rose petal and red apple skin blend with wet soil & river rocks. If my eyes were closed, Im not sure I would say this were a rosé. It even has soft tannin and red berry fruit on the palate. Easy and soft for a lazy mid-day glass.</p>
 			<p>
 				<strong>FRUIT SOURCES</strong><br />
 				Sherman Ridge and Bluestone Vidal Blanc, Bluestone Chambourcin, Oxeye Blaufränkisch, Sherman Ridge Petit Manseng, Barren Ridge Traminette, all from the Shenandoah Valley.
